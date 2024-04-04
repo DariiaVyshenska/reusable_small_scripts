@@ -2,12 +2,12 @@
 
 if [[ "$#" -ne 3 ]]; then
 	echo "Usage: $0 <lane> <input_path> <output_path>"
-	echo "<lane> can be of value 1 or 2."
-	echo "<input_path> must point to a directory that contains subdirectories with fastq.gz files from baseSpace project."
-	echo "<output_path> must point to an empty directory. Otherwise you risk overwriting directories and files with conflicting names."
+	echo "<lane>: The lane number, either 1 or 2."
+	echo "<input_path>: Directory path containing subdirectories with .fastq.gz files from a BaseSpace project."
+	echo "<output_path>: Path to an empty directory for storing processed files. Existing data may be overwritten."
 	echo 
 	echo "Example of usage:"
-	echo "./phipinputformat.sh 1 ./my/input/dir ./my/output/dir"
+	echo "./prep_fq_from_bs.sh 2 test_input_dir/two_lanes test_out_dir"
 	
 	exit 1
 fi
