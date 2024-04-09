@@ -77,7 +77,11 @@ elif [[ $lane == 2 ]]; then
 				cat "$file_path" "$second_lane_file" > "$concat_file_path" && echo "...done"
 				echo
 			else
-				echo "Error: Missing matching file for concatenation: $second_lane_file. No concatenation done for $file_basename"
+				echo '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+    				echo
+    				echo "Error: Missing matching file for concatenation: $second_lane_file. No concatenation done for $file_basename"
+				echo
+				echo '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
 				echo
 			fi
 		done
