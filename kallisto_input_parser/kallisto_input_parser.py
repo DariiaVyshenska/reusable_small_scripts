@@ -42,7 +42,8 @@ def main(kal_out_path, meta_path, output_path):
   result_df.to_csv(os.path.join(output_path, 'kallisto_raw_counts_merged.csv'), index=False)
     
 if __name__ == "__main__":
-  parser = argparse.ArgumentParser(description='Merge raw counts from kallisto output in a single csv file.')
+  parser = argparse.ArgumentParser(description='Merge raw counts from kallisto output in a single csv file.',
+                                   usage='kallisto_inut_parser /path/to/kal/out /path/to/meta.csv /path/to/result')
   parser.add_argument('kal_out_path', type=str, help='Absolute path to the kallisto output directories')
   parser.add_argument('meta_path', type=str, help='Path to the metadata file (CSV format). Must contain "target_id" column that references same peptide id as were provided to kallisto')
   parser.add_argument('output_path', type=str, help='Path where the merged output CSV will be saved')
