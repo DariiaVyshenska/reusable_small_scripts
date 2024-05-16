@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 def read_keys_csv(keys_file_path):
     try:
-        keys_table = pd.read_csv(keys_file_path, usecols=['target_id', 'peptide_seq'])
+        keys_table = pd.read_csv(keys_file_path, usecols=['target_inter_id', 'target_id', 'peptide_seq'])
         if keys_table.empty:
             logging.error('The CSV file with keys data is empty or lacks required columns.')
             return None
@@ -20,12 +20,13 @@ def read_keys_csv(keys_file_path):
 def dump_kmer_db(result_file_path, keys_table, kmer_len):
     with open(result_file_path, 'w') as file:
         for row in keys_table.itertuples():
-            peptide_id = row[1]
-            peptide_seq = row[2]
+            peptide_id = row[2]
+            peptide_seq = row[3]
             curr_hash = {}
             kmers = set(peptide_seq[idx:idx+kmer_len] for idx in range(len(peptide_seq) - kmer_len + 1))
-            json_obj = json.dumps({peptide_id: list(kmers)})
+            json_obj = json.dumps({'peptide_id': peptide_id, 'kmers': list(kmers)})
             file.write(json_obj + '\n')
+      
 
 def main(kmer_len, keys_file_path, output_path):
     output_path = os.path.abspath(output_path)
@@ -41,8 +42,8 @@ def main(kmer_len, keys_file_path, output_path):
     
     if keys_table is None:
         return
-    
-    keys_table.sort_values(by = 'target_id', inplace=True)
+
+    keys_table.sort_values(by = 'target_inter_id', inplace=True)
     dump_kmer_db(result_file_path, keys_table, kmer_len)
     logging.info('All done!')
     
