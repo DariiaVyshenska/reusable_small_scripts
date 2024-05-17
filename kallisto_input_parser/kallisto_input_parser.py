@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import argparse
+import re
 
 def main(kal_out_path, meta_path, output_path):
   kal_out_path = os.path.abspath(kal_out_path)
@@ -22,8 +23,10 @@ def main(kal_out_path, meta_path, output_path):
       except Exception as e:
         print(f"Error reading file {file_path}: {e}")
         continue
-      
-      curr_df.rename(columns={'est_counts': os.path.basename(root)}, inplace=True)
+      file_basename = os.path.basename(root)
+      basespace_suffx = r"_S\d+$"
+      sample_id = re.sub(basespace_suffx, "", file_basename)
+      curr_df.rename(columns={'est_counts': sample_id}, inplace=True)
       df_list.append(curr_df)
 
   if not df_list:
@@ -40,6 +43,7 @@ def main(kal_out_path, meta_path, output_path):
   os.makedirs(output_path, exist_ok=True)
 
   result_df.to_csv(os.path.join(output_path, 'kallisto_raw_counts_merged.csv'), index=False)
+  print("All done!")
     
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description='Merge raw counts from kallisto output in a single csv file.',
