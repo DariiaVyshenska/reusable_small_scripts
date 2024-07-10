@@ -1,0 +1,2 @@
+biopython==1.83
+vcfpy==0.13.8
