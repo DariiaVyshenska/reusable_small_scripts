@@ -17,8 +17,8 @@ lane="$1"
 input_path="$2"
 output_path="$3"
 
-raw_reads_dir="${output_path}/raw_reads"
-concat_dir="${output_path}/concat_raw_reads"
+raw_reads_dir="${output_path}/raw-fastqs"
+concat_dir="${output_path}/concat_raw-fastqs"
 
 # Check if .fastq.gz files exist in the input directory
 if ! find "$input_path" -mindepth 2 -maxdepth 2 -type f -name '*.fastq.gz' | read -r _; then
@@ -27,8 +27,8 @@ if ! find "$input_path" -mindepth 2 -maxdepth 2 -type f -name '*.fastq.gz' | rea
 fi
 
 # creating output dir for raw reads
-mkdir -p "$raw_reads_dir" || { echo "Failed to create 'raw_reads' directory in specified output path."; exit 1; }
-echo "Directory 'raw_reads' created successfully in ${output_path}."
+mkdir -p "$raw_reads_dir" || { echo "Failed to create 'raw-fastqs' directory in specified output path."; exit 1; }
+echo "Directory 'raw-fastqs' created successfully in ${output_path}."
 echo
 
 # reusable function to copy files to raw reads directory with new suffix
@@ -39,6 +39,7 @@ copy_and_rename() {
 	for curr_file_path in "${input_path}"/*/*"${curr_suffix}".fastq.gz; do
 		local file_basename=$(basename "$curr_file_path" "$curr_suffix".fastq.gz)
 		local new_file_path="$raw_reads_dir/${file_basename}${repl_suffix}.fastq.gz"
+		new_file_path=$(echo "$new_file_path" | sed 's/_S[0-9][0-9]*//')
 		if cp "$curr_file_path" "$new_file_path"; then
 			echo "File copied: $new_file_path"
 		else
