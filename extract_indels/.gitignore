@@ -1,3 +1,4 @@
 .DS_Store
 test_out
 __pycache__/
+tests/__pycache__/

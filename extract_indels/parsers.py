@@ -62,7 +62,7 @@ def get_cds_info(pos: int, cds_list: List[Tuple[int, int, str, str]]) -> Tuple[b
     cds_list (List[Tuple[int, int, str, str]]): List of CDS regions.
         
   Returns:
-    Tuple[bool, Tuple[Optional[str], Optional[str]]]: Whether the position is within a CDS and the gene name and product.
+    Tuple[bool, Tuple[Optional[str], Optional[str]]]: Whether the position is within a CDS and the gene name and product (first CDS, if present in multiple ones).
   """
   for cds in cds_list:
     if cds[0] <= pos <= cds[1]:
