@@ -1,3 +1,4 @@
+import argparse
 import logging
 import os
 import pandas as pd
@@ -21,13 +22,17 @@ def summarize_snps(input_csv_path, output_csv_path):
 
 def main(input_csv_path, output_path):
   try:
+    os.makedirs(output_path, exist_ok=True)
     output_csv_path = os.path.join(output_path, 'snp_summary.csv')
     summarize_snps(input_csv_path, output_csv_path)
   except Exception as e:
     logging.error(f"Error parsing visualization csv file: {e}")
   
 if __name__ == '__main__':
-  # arguments - input csv and output folder
-  input_csv_path = './test_data/test_visualization.csv'
-  output_path = '.'
-  main(input_csv_path, output_path)
+  parser = argparse.ArgumentParser(description='Summarizes RAVA visualization.csv file: types of SNPs and counts per sample.',
+                                    usage='python main.py <input_csv_path> <output_path>')
+  parser.add_argument('input_csv_path', type=str, help='Path to the RAVA generated visualization.csv file.')
+  parser.add_argument('output_path', type=str, help='Path where the output summary CSV will be saved')
+    
+  args = parser.parse_args()
+  main(args.input_csv_path, args.output_path)
