@@ -39,6 +39,7 @@ def extract_sample_id(vcf_path: str) -> str:
   sample_id_filename = os.path.basename(vcf_path)
   sample_id = os.path.splitext(sample_id_filename)[0]
   sample_id = os.path.splitext(sample_id)[0]
+  sample_id = os.path.splitext(sample_id)[0]
   return sample_id
 
 def parse_vcf(vcf_file_path: str) -> vcfpy.Reader:
@@ -89,7 +90,7 @@ def parse_record(
     sample_call = record.call_for_sample['Sample1']
     dp = sample_call.data.get('DP')
     ad = sample_call.data.get('AD')
-    freq = (ad / dp * 100) if dp else 0
+    freq = (round(ad / dp * 100, 2)) if dp else 0
 
     if dp >= 30 and freq >= 10:
       pos = record.POS
