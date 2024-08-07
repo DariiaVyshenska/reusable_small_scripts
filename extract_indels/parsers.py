@@ -96,9 +96,17 @@ def parse_record(
       pos = record.POS
       ref = record.REF
       alt = record.ALT[0].value
+      
+      adf = sample_call.data.get('ADF')
+      adr = sample_call.data.get('ADR')
+      adf_ratio = round(adf / (adf + adr), 2)
+      adr_ratio = round(adr / (adf + adr), 2)
+      strn_bias_status = (adf_ratio < 0.9 and adr_ratio < 0.9)
       mut_type = 'deletion' if len(record.REF) > len(record.ALT[0].value) else 'insertion'
       _, (product) = get_cds_info(pos, all_cds_regions)
-      return True, [sample_id, pos, ref, alt, dp, ad, freq, mut_type, product]
+      return True, [sample_id, pos, ref, alt, dp, ad, freq, 
+                    adf_ratio, adr_ratio, strn_bias_status, 
+                    mut_type, product]
   return False, None
 
 def process_vcf_records(
