@@ -11,12 +11,12 @@ class TestParsers(unittest.TestCase):
     self.assertEqual(extract_sample_id('/path/to/test_full.fastq.vcf'), 'test_full')
 
   def test_get_cds_info(self):
-    self.assertEqual(get_cds_info(3, [(1, 5, 'GENE1', 'PRODUCT1')]), (True, ('GENE1', 'PRODUCT1')))
-    self.assertEqual(get_cds_info(5, [(1, 5, 'GENE1', 'PRODUCT1')]), (True, ('GENE1', 'PRODUCT1')))
-    self.assertEqual(get_cds_info(1, [(1, 5, 'GENE1', 'PRODUCT1')]), (True, ('GENE1', 'PRODUCT1')))
-    self.assertEqual(get_cds_info(8, [(1, 5, 'GENE1', 'PRODUCT1')]), (False, (None, None)))
-    self.assertEqual(get_cds_info(11, [(1, 5, 'GENE1', 'PRODUCT1'), (6, 10, 'GENE2', 'PRODUCT2')]), (False, (None, None)))
-    self.assertEqual(get_cds_info(7, []), (False, (None, None)))
+    self.assertEqual(get_cds_info(3, [(1, 5, 'PRODUCT1')]), (True, ('PRODUCT1')))
+    self.assertEqual(get_cds_info(5, [(1, 5, 'PRODUCT1')]), (True, ('PRODUCT1')))
+    self.assertEqual(get_cds_info(1, [(1, 5, 'PRODUCT1')]), (True, ('PRODUCT1')))
+    self.assertEqual(get_cds_info(8, [(1, 5, 'PRODUCT1')]), (False, (None)))
+    self.assertEqual(get_cds_info(11, [(1, 5, 'PRODUCT1'), (6, 10, 'PRODUCT2')]), (False, (None)))
+    self.assertEqual(get_cds_info(7, []), (False, (None)))
 
 if __name__ == '__main__':
   unittest.main()

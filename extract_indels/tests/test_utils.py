@@ -10,8 +10,8 @@ class TestUtils(unittest.TestCase):
     self.sample_id = 'test_sample'
     self.output_path = 'test_output'
     self.data = [
-      ["test_sample", "12345", "A", "T", "100", "20", "0.2", "insertion", "GENE1", "PRODUCT1"],
-      ["test_sample", "67890", "G", "C", "150", "30", "0.3", "deletion", "GENE2", "PRODUCT2"]
+      ["test_sample", "12345", "A", "T", "100", "20", "0.2", "insertion", "PRODUCT1"],
+      ["test_sample", "67890", "G", "C", "150", "30", "0.3", "deletion", "PRODUCT2"]
     ]
     self.expected_file = os.path.join(self.output_path, f"{self.sample_id}_indels_af10_dp30.csv")
     
@@ -31,7 +31,7 @@ class TestUtils(unittest.TestCase):
       header = next(csv_reader)
       self.assertEqual(header, ['SAMPLE_ID', 'POSITION', 'REFERENCE_SEQ', 'ALTERNATIVE_SEQ', 
                                 'SEQ_DEPTH', 'ALT_SEQ_DEPTH', 'FREQUENCY', 'CHANGE_TYPE', 
-                                'GENE_NAME', 'PRODUCT'])
+                                'PRODUCT'])
       
       for idx, row in enumerate(csv_reader):
         self.assertEqual(row, self.data[idx])
