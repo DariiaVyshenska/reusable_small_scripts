@@ -67,8 +67,8 @@ def get_cds_info(pos: int, cds_list: List[Tuple[int, int, str, str]]) -> Tuple[b
   """
   for cds in cds_list:
     if cds[0] <= pos <= cds[1]:
-      return True, (cds[2], cds[3])
-  return False, (None, None)
+      return True, (cds[2])
+  return False, (None)
 
 def parse_record(
   sample_id: str, 
@@ -97,8 +97,8 @@ def parse_record(
       ref = record.REF
       alt = record.ALT[0].value
       mut_type = 'deletion' if len(record.REF) > len(record.ALT[0].value) else 'insertion'
-      _, (gene_name, product) = get_cds_info(pos, all_cds_regions)
-      return True, [sample_id, pos, ref, alt, dp, ad, freq, mut_type, gene_name, product]
+      _, (product) = get_cds_info(pos, all_cds_regions)
+      return True, [sample_id, pos, ref, alt, dp, ad, freq, mut_type, product]
   return False, None
 
 def process_vcf_records(
