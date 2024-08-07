@@ -1,5 +1,5 @@
 import argparse
-from parsers import get_gene_locations, extract_sample_id, process_vcf_records
+from parsers import get_full_ref_seq, get_gene_locations, extract_sample_id, process_vcf_records
 from utils import write_csv
 from typing import List, Tuple
 import logging
@@ -9,13 +9,14 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 def main(vcf_file_path: str, gb_file_path: str, output_path: str) -> None:
   try:
     all_cds_regions = get_gene_locations(gb_file_path)
+    full_ref_seq = get_full_ref_seq(gb_file_path)
   except Exception as e:
     logging.error(f"Error getting gene locations: {e}")
     return
   
   sample_id = extract_sample_id(vcf_file_path)
   try:
-    data = process_vcf_records(sample_id, vcf_file_path, all_cds_regions)
+    data = process_vcf_records(sample_id, vcf_file_path, all_cds_regions, full_ref_seq)
   except Exception as e:
     logging.error(f"Error processing VCF records: {e}")
     return

@@ -22,6 +22,7 @@ def write_csv(sample_id: str, output_path: str, data: List) -> None:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(['SAMPLE_ID', 'POSITION', 'REFERENCE_SEQ', 'ALTERNATIVE_SEQ', 
                          'SEQ_DEPTH', 'ALT_SEQ_DEPTH', 'FREQUENCY', 'ADF_RATIO', 
-                         'ADR_RATIO', 'STRND_BIAS_PASS', 'CHANGE_TYPE', 'PRODUCT'])
+                         'ADR_RATIO', 'STRND_BIAS_PASS', 'VALID_CODON_LEN',  
+                         'CHANGE_TYPE', 'PRODUCT', 'PLACEMENT'])
     for row in data:
       csv_writer.writerow(row)
