@@ -1,202 +1,202 @@
 Sample,Amino Acid Change,Position,AF,Change,Protein,NucleotideChange,LetterChange,Syn,Depth,Passage,Reverse_Complement,NucCorrect,AminoCorrect,MatPeptide
-240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq,nsp2 N8N,829,1.74,N8N,nsp2,C24T,C to T,synonymous SNV,459,rSARS-CoV-2_delta3a/7b_Remdesivir,No,C24T,N8N,nsp2: N8N; C24T
-240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq,nsp2 T34I,906,1.27,T34I,nsp2,C101T,C to T,nonsynonymous SNV,236,rSARS-CoV-2_delta3a/7b_Remdesivir,No,C101T,T34I,nsp2: T34I; C101T
-240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq,nsp3 L1477L,7150,2.93,L1477L,nsp3,A4431G,A to G,synonymous SNV,205,rSARS-CoV-2_delta3a/7b_Remdesivir,No,A4431G,L1477L,nsp3: L1477L; A4431G
-240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq,nsp4 G276D,9381,1.08,G276D,nsp4,G827A,G to A,nonsynonymous SNV,186,rSARS-CoV-2_delta3a/7b_Remdesivir,No,G827A,G276D,nsp4: G276D; G827A
-240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq,RdRp V557V,15111,3.7,V557V,RdRp,A1671G,A to G,synonymous SNV,405,rSARS-CoV-2_delta3a/7b_Remdesivir,No,A1671G,V557V,-
-240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq,RdRp M633L,15337,1.3,M633L,RdRp,A1897T,A to T,nonsynonymous SNV,384,rSARS-CoV-2_delta3a/7b_Remdesivir,No,A1897T,M633L,-
-240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq,endoRNAse I295I,20505,3.29,I295I,endoRNAse,T885A,T to A,synonymous SNV,516,rSARS-CoV-2_delta3a/7b_Remdesivir,No,T885A,I295I,-
-240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq,surface_glycoprotein T29A,21647,2,T29A,surface_glycoprotein,A85G,A to G,nonsynonymous SNV,100,rSARS-CoV-2_delta3a/7b_Remdesivir,No,A85G,T29A,-
-240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq,surface_glycoprotein T167I,22062,1.39,T167I,surface_glycoprotein,C500T,C to T,nonsynonymous SNV,216,rSARS-CoV-2_delta3a/7b_Remdesivir,No,C500T,T167I,-
-240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq,nucleocapsid_phosphoprotein K448*,28636,2.65,K448*,nucleocapsid_phosphoprotein,A1342T,A to T,stopgain,151,rSARS-CoV-2_delta3a/7b_Remdesivir,No,A1342T,K448*,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,leader_protein N178N,799,99.12,N178N,leader_protein,C534T,C to T,synonymous SNV,340,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C534T,N178N,leader_protein: N178N; C534T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,leader_protein G179G,802,100,G179G,leader_protein,A537G,A to G,synonymous SNV,337,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A537G,G179G,leader_protein: G179G; A537G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 L24L,877,4.56,L24L,nsp2,T72C,T to C,synonymous SNV,285,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T72C,L24L,nsp2: L24L; T72C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 C51C,958,1.06,C51C,nsp2,C153T,C to T,synonymous SNV,188,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C153T,C51C,nsp2: C51C; C153T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 N130D,1193,3.27,N130D,nsp2,A388G,A to G,nonsynonymous SNV,306,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A388G,N130D,nsp2: N130D; A388G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 T149T,1252,96.62,T149T,nsp2,T447C,T to C,synonymous SNV,325,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T447C,T149T,nsp2: T149T; T447C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 G165D,1299,100,G165D,nsp2,G494A,G to A,nonsynonymous SNV,530,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G494A,G165D,nsp2: G165D; G494A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 E272G,1620,100,E272G,nsp2,A815G,A to G,nonsynonymous SNV,230,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A815G,E272G,nsp2: E272G; A815G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 F319F,1762,100,F319F,nsp2,C957T,C to T,synonymous SNV,312,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C957T,F319F,nsp2: F319F; C957T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 R380R,1945,99.26,R380R,nsp2,T1140C,T to C,synonymous SNV,270,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1140C,R380R,nsp2: R380R; T1140C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 L398L,1999,99.57,L398L,nsp2,G1194A,G to A,synonymous SNV,230,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1194A,L398L,nsp2: L398L; G1194A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 L400L,2005,99.56,L400L,nsp2,C1200T,C to T,synonymous SNV,228,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1200T,L400L,nsp2: L400L; C1200T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 A476T,2231,3.97,A476T,nsp2,G1426A,G to A,nonsynonymous SNV,731,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1426A,A476T,nsp2: A476T; G1426A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 C487Y,2265,1.14,C487Y,nsp2,G1460A,G to A,nonsynonymous SNV,615,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1460A,C487Y,nsp2: C487Y; G1460A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 Y537Y,2416,3.33,Y537Y,nsp2,C1611T,C to T,synonymous SNV,481,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1611T,Y537Y,nsp2: Y537Y; C1611T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 V541I,2426,100,V541I,nsp2,G1621A,G to A,nonsynonymous SNV,364,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1621A,V541I,nsp2: V541I; G1621A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 E545E,2440,1.49,E545E,nsp2,A1635G,A to G,synonymous SNV,335,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1635G,E545E,nsp2: E545E; A1635G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 V577I,2534,100,V577I,nsp2,G1729A,G to A,nonsynonymous SNV,107,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1729A,V577I,nsp2: V577I; G1729A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 A596A,2593,7.61,A596A,nsp2,T1788C,T to C,synonymous SNV,92,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1788C,A596A,nsp2: A596A; T1788C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 T601T,2608,9.89,T601T,nsp2,A1803G,A to G,synonymous SNV,91,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1803G,T601T,nsp2: T601T; A1803G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 N606N,2623,4.85,N606N,nsp2,C1818T,C to T,synonymous SNV,103,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1818T,N606N,nsp2: N606N; C1818T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp2 N631N,2698,3.78,N631N,nsp2,T1893C,T to C,synonymous SNV,185,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1893C,N631N,nsp2: N631N; T1893C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 F53F,2878,39.25,F53F,nsp3,C159T,C to T,synonymous SNV,530,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C159T,F53F,nsp3: F53F; C159T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 T73I,2937,99.65,T73I,nsp3,C218T,C to T,nonsynonymous SNV,282,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C218T,T73I,nsp3: T73I; C218T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 T133I,3117,1.1,T133I,nsp3,C398T,C to T,nonsynonymous SNV,272,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C398T,T133I,nsp3: T133I; C398T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 D136D,3127,100,D136D,nsp3,T408C,T to C,synonymous SNV,189,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T408C,D136D,nsp3: D136D; T408C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 Q152R,3174,35.07,Q152R,nsp3,A455G,A to G,nonsynonymous SNV,211,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A455G,Q152R,nsp3: Q152R; A455G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 E155E,3184,1.86,E155E,nsp3,A465G,A to G,synonymous SNV,215,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A465G,E155E,nsp3: E155E; A465G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 G171S,3230,40.34,G171S,nsp3,G511A,G to A,nonsynonymous SNV,176,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G511A,G171S,nsp3: G171S; G511A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 S176N,3246,5.39,S176N,nsp3,G527A,G to A,nonsynonymous SNV,204,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G527A,S176N,nsp3: S176N; G527A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 L327L,3700,100,L327L,nsp3,T981C,T to C,synonymous SNV,230,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T981C,L327L,nsp3: L327L; T981C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 F336S,3726,100,F336S,nsp3,T1007C,T to C,nonsynonymous SNV,289,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1007C,F336S,nsp3: F336S; T1007C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 E382K,3863,1.18,E382K,nsp3,G1144A,G to A,nonsynonymous SNV,761,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1144A,E382K,nsp3: E382K; G1144A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 K384E,3869,44.73,K384E,nsp3,A1150G,A to G,nonsynonymous SNV,702,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1150G,K384E,nsp3: K384E; A1150G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 F396S,3906,1.05,F396S,nsp3,T1187C,T to C,nonsynonymous SNV,571,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1187C,F396S,nsp3: F396S; T1187C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 T504T,4231,3.5,T504T,nsp3,A1512G,A to G,synonymous SNV,143,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1512G,T504T,nsp3: T504T; A1512G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 K569K,4426,1.12,K569K,nsp3,A1707G,A to G,synonymous SNV,268,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1707G,K569K,nsp3: K569K; A1707G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 V766V,5017,45.76,V766V,nsp3,G2298A,G to A,synonymous SNV,118,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G2298A,V766V,nsp3: V766V; G2298A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 T819I,5175,4.21,T819I,nsp3,C2456T,C to T,nonsynonymous SNV,404,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2456T,T819I,nsp3: T819I; C2456T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 N854N,5281,1.86,N854N,nsp3,C2562T,C to T,synonymous SNV,429,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2562T,N854N,nsp3: N854N; C2562T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 E869E,5326,100,E869E,nsp3,G2607A,G to A,synonymous SNV,278,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G2607A,E869E,nsp3: E869E; G2607A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 L895L,5404,2.29,L895L,nsp3,T2685C,T to C,synonymous SNV,350,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T2685C,L895L,nsp3: L895L; T2685C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 Q941Q,5542,100,Q941Q,nsp3,G2823A,G to A,synonymous SNV,359,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G2823A,Q941Q,nsp3: Q941Q; G2823A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 K977E,5648,3.08,K977E,nsp3,A2929G,A to G,nonsynonymous SNV,130,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A2929G,K977E,nsp3: K977E; A2929G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 Y1055Y,5884,100,Y1055Y,nsp3,C3165T,C to T,synonymous SNV,125,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C3165T,Y1055Y,nsp3: Y1055Y; C3165T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 D1079N,5954,48.31,D1079N,nsp3,G3235A,G to A,nonsynonymous SNV,89,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G3235A,D1079N,nsp3: D1079N; G3235A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 N1116D,6065,2.06,N1116D,nsp3,A3346G,A to G,nonsynonymous SNV,97,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A3346G,N1116D,nsp3: N1116D; A3346G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 K1241E,6440,1.6,K1241E,nsp3,A3721G,A to G,nonsynonymous SNV,250,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A3721G,K1241E,nsp3: K1241E; A3721G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 A1279T,6554,100,A1279T,nsp3,G3835A,G to A,nonsynonymous SNV,77,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G3835A,A1279T,nsp3: A1279T; G3835A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 A1280A,6559,100,A1280A,nsp3,T3840C,T to C,synonymous SNV,77,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T3840C,A1280A,nsp3: A1280A; T3840C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 A1431T,7010,100,A1431T,nsp3,G4291A,G to A,complex,170,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G4291A,A1431T,nsp3: A1431T; G4291A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 A1431A,7012,1.98,A1431A,nsp3,T4293C,T to C,complex,202,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T4293C,A1431A,nsp3: A1431A; T4293C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 P1469S,7124,99.35,P1469S,nsp3,C4405T,C to T,nonsynonymous SNV,153,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C4405T,P1469S,nsp3: P1469S; C4405T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 D1481D,7162,100,D1481D,nsp3,C4443T,C to T,synonymous SNV,208,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C4443T,D1481D,nsp3: D1481D; C4443T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 A1527V,7299,38.72,A1527V,nsp3,C4580T,C to T,nonsynonymous SNV,235,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C4580T,A1527V,nsp3: A1527V; C4580T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 R1614K,7560,45.02,R1614K,nsp3,G4841A,G to A,nonsynonymous SNV,271,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G4841A,R1614K,nsp3: R1614K; G4841A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 K1660R,7698,45.7,K1660R,nsp3,A4979G,A to G,complex,186,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A4979G,K1660R,nsp3: K1660R; A4979G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 K1660K,7699,1.06,K1660K,nsp3,A4980G,A to G,complex,188,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A4980G,K1660K,nsp3: K1660K; A4980G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 L1709L,7844,42.49,L1709L,nsp3,C5125T,C to T,synonymous SNV,233,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C5125T,L1709L,nsp3: L1709L; C5125T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 C1731Y,7911,1.23,C1731Y,nsp3,G5192A,G to A,nonsynonymous SNV,243,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G5192A,C1731Y,nsp3: C1731Y; G5192A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 L1791F,8090,100,L1791F,nsp3,C5371T,C to T,nonsynonymous SNV,269,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C5371T,L1791F,nsp3: L1791F; C5371T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 T1797I,8109,3.99,T1797I,nsp3,C5390T,C to T,nonsynonymous SNV,301,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C5390T,T1797I,nsp3: T1797I; C5390T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp3 I1816V,8165,47.34,I1816V,nsp3,A5446G,A to G,nonsynonymous SNV,207,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A5446G,I1816V,nsp3: I1816V; A5446G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp4 V129V,8941,4.41,V129V,nsp4,T387C,T to C,synonymous SNV,204,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T387C,V129V,nsp4: V129V; T387C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp4 N131N,8947,100,N131N,nsp4,C393T,C to T,synonymous SNV,160,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C393T,N131N,nsp4: N131N; C393T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp4 Y134Y,8956,34.84,Y134Y,nsp4,C402T,C to T,synonymous SNV,155,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C402T,Y134Y,nsp4: Y134Y; C402T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp4 E141E,8977,1.24,E141E,nsp4,G423A,G to A,synonymous SNV,161,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G423A,E141E,nsp4: E141E; G423A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp4 E219E,9211,1.44,E219E,nsp4,G657A,G to A,synonymous SNV,208,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G657A,E219E,nsp4: E219E; G657A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp4 A282T,9398,100,A282T,nsp4,G844A,G to A,nonsynonymous SNV,90,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G844A,A282T,nsp4: A282T; G844A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp4 V294I,9434,42.2,V294I,nsp4,G880A,G to A,nonsynonymous SNV,109,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G880A,V294I,nsp4: V294I; G880A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp4 I345I,9589,98.41,I345I,nsp4,T1035C,T to C,synonymous SNV,63,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1035C,I345I,nsp4: I345I; T1035C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp4 F390S,9723,46.74,F390S,nsp4,T1169C,T to C,nonsynonymous SNV,184,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1169C,F390S,nsp4: F390S; T1169C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3C-like_proteinase T25I,10128,2.68,T25I,3C-like_proteinase,C74T,C to T,nonsynonymous SNV,411,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C74T,T25I,3C-like_proteinase: T25I; C74T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3C-like_proteinase M82I,10300,7.1,M82I,3C-like_proteinase,G246A,G to A,nonsynonymous SNV,338,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G246A,M82I,3C-like_proteinase: M82I; G246A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3C-like_proteinase D92D,10330,35.61,D92D,3C-like_proteinase,T276C,T to C,synonymous SNV,264,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T276C,D92D,3C-like_proteinase: D92D; T276C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3C-like_proteinase Y118Y,10408,100,Y118Y,3C-like_proteinase,C354T,C to T,synonymous SNV,109,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C354T,Y118Y,3C-like_proteinase: Y118Y; C354T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3C-like_proteinase Y126Y,10432,100,Y126Y,3C-like_proteinase,C378T,C to T,synonymous SNV,108,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C378T,Y126Y,3C-like_proteinase: Y126Y; C378T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3C-like_proteinase A193V,10632,1.06,A193V,3C-like_proteinase,C578T,C to T,nonsynonymous SNV,188,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C578T,A193V,3C-like_proteinase: A193V; C578T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3C-like_proteinase L220L,10714,4.73,L220L,3C-like_proteinase,C660T,C to T,synonymous SNV,275,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C660T,L220L,3C-like_proteinase: L220L; C660T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3C-like_proteinase Y237Y,10765,1.51,Y237Y,3C-like_proteinase,C711T,C to T,synonymous SNV,265,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C711T,Y237Y,3C-like_proteinase: Y237Y; C711T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3C-like_proteinase A260T,10832,100,A260T,3C-like_proteinase,G778A,G to A,nonsynonymous SNV,134,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G778A,A260T,3C-like_proteinase: A260T; G778A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp6 K4K,10984,1.2,K4K,nsp6,A12G,A to G,synonymous SNV,250,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A12G,K4K,nsp6: K4K; A12G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp6 R5G,10985,8.43,R5G,nsp6,A13G,A to G,nonsynonymous SNV,249,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A13G,R5G,nsp6: R5G; A13G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp6 K8R,10995,45.23,K8R,nsp6,A23G,A to G,nonsynonymous SNV,241,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A23G,K8R,nsp6: K8R; A23G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp6 T20A,11030,3.95,T20A,nsp6,A58G,A to G,nonsynonymous SNV,228,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A58G,T20A,nsp6: T20A; A58G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp6 V78I,11204,5.75,V78I,nsp6,G232A,G to A,nonsynonymous SNV,226,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G232A,V78I,nsp6: V78I; G232A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp6 K111R,11304,41.22,K111R,nsp6,A332G,A to G,nonsynonymous SNV,490,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A332G,K111R,nsp6: K111R; A332G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp6 I162T,11457,100,I162T,nsp6,T485C,T to C,nonsynonymous SNV,286,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T485C,I162T,nsp6: I162T; T485C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp6 T172T,11488,35.85,T172T,nsp6,T516C,T to C,synonymous SNV,318,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T516C,T172T,nsp6: T172T; T516C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp6 T222T,11638,5.08,T222T,nsp6,T666C,T to C,synonymous SNV,453,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T666C,T222T,nsp6: T222T; T666C
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp8 V131I,12482,100,V131I,nsp8,G391A,G to A,nonsynonymous SNV,57,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G391A,V131I,nsp8: V131I; G391A
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp8 D134D,12493,28.57,D134D,nsp8,C402T,C to T,synonymous SNV,70,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C402T,D134D,nsp8: D134D; C402T
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp9 T67T,12886,1.07,T67T,nsp9,A201G,A to G,synonymous SNV,374,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A201G,T67T,nsp9: T67T; A201G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nsp9 T77T,12916,1.78,T77T,nsp9,A231G,A to G,synonymous SNV,338,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A231G,T77T,nsp9: T77T; A231G
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp T26T,13518,91.89,T26T,RdRp,T78C,T to C,synonymous SNV,111,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T78C,T26T,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp D36D,13548,100,D36D,RdRp,C108T,C to T,synonymous SNV,51,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C108T,D36D,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp K143T,13868,100,K143T,RdRp,A428C,A to C,nonsynonymous SNV,140,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A428C,K143T,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp T189T,14007,2.13,T189T,RdRp,A567G,A to G,synonymous SNV,328,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A567G,T189T,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp L212L,14076,5.69,L212L,RdRp,C636T,C to T,synonymous SNV,404,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C636T,L212L,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp Q224R,14111,10.7,Q224R,RdRp,A671G,A to G,nonsynonymous SNV,374,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A671G,Q224R,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp L251L,14191,48.12,L251L,RdRp,T751C,T to C,synonymous SNV,133,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T751C,L251L,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp P264P,14232,2.5,P264P,RdRp,T792C,T to C,synonymous SNV,160,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T792C,P264P,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp S397S,14631,99.57,S397S,RdRp,A1191G,A to G,synonymous SNV,234,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1191G,S397S,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp N447S,14780,100,N447S,RdRp,A1340G,A to G,nonsynonymous SNV,153,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1340G,N447S,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp E474E,14862,41.48,E474E,RdRp,A1422G,A to G,synonymous SNV,135,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1422G,E474E,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp V476I,14866,100,V476I,RdRp,G1426A,G to A,nonsynonymous SNV,132,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1426A,V476I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp G486G,14898,7.41,G486G,RdRp,C1458T,C to T,synonymous SNV,135,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1458T,G486G,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp Y521Y,15003,1.4,Y521Y,RdRp,T1563C,T to C,synonymous SNV,215,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1563C,Y521Y,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp H599H,15237,1.2,H599H,RdRp,C1797T,C to T,synonymous SNV,250,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1797T,H599H,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,RdRp H898H,16134,44.96,H898H,RdRp,C2694T,C to T,synonymous SNV,407,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2694T,H898H,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase C8C,16260,1.73,C8C,helicase,C24T,C to T,synonymous SNV,289,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C24T,C8C,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase G54G,16398,1.51,G54G,helicase,T162C,T to C,synonymous SNV,265,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T162C,G54G,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase Y149Y,16683,1.16,Y149Y,helicase,T447C,T to C,synonymous SNV,517,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T447C,Y149Y,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase I195M,16821,1.93,I195M,helicase,A585G,A to G,nonsynonymous SNV,415,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A585G,I195M,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase V209I,16861,1.12,V209I,helicase,G625A,G to A,nonsynonymous SNV,268,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G625A,V209I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase K271E,17047,100,K271E,helicase,A811G,A to G,nonsynonymous SNV,67,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A811G,K271E,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase H290Y,17104,98.13,H290Y,helicase,C868T,C to T,nonsynonymous SNV,107,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C868T,H290Y,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase Y306Y,17154,41,Y306Y,helicase,T918C,T to C,synonymous SNV,200,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T918C,Y306Y,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase E375E,17361,40.69,E375E,helicase,A1125G,A to G,synonymous SNV,231,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1125G,E375E,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase L384L,17388,38.17,L384L,helicase,G1152A,G to A,synonymous SNV,241,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1152A,L384L,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase P504P,17748,3.25,P504P,helicase,T1512C,T to C,synonymous SNV,123,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1512C,P504P,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase A505T,17749,3.25,A505T,helicase,G1513A,G to A,nonsynonymous SNV,123,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1513A,A505T,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase V558V,17910,100,V558V,helicase,A1674G,A to G,synonymous SNV,89,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1674G,V558V,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,helicase V597M,18025,98.47,V597M,helicase,G1789A,G to A,nonsynonymous SNV,197,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1789A,V597M,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease K32K,18135,7.35,K32K,3'-to-5'_exonuclease,A96G,A to G,synonymous SNV,204,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A96G,K32K,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease V40A,18158,1.03,V40A,3'-to-5'_exonuclease,T119C,T to C,nonsynonymous SNV,194,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T119C,V40A,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease I80M,18279,1.17,I80M,3'-to-5'_exonuclease,A240G,A to G,nonsynonymous SNV,171,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A240G,I80M,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease Q108Q,18363,100,Q108Q,3'-to-5'_exonuclease,G324A,G to A,synonymous SNV,142,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G324A,Q108Q,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease T113I,18377,1.41,T113I,3'-to-5'_exonuclease,C338T,C to T,nonsynonymous SNV,142,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C338T,T113I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease V120I,18397,99.03,V120I,3'-to-5'_exonuclease,G358A,G to A,nonsynonymous SNV,103,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G358A,V120I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease S178S,18573,6.23,S178S,3'-to-5'_exonuclease,T534C,T to C,synonymous SNV,385,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T534C,S178S,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease G189G,18606,1.94,G189G,3'-to-5'_exonuclease,C567T,C to T,synonymous SNV,413,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C567T,G189G,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease F377F,19170,4.26,F377F,3'-to-5'_exonuclease,C1131T,C to T,synonymous SNV,188,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1131T,F377F,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease Y420Y,19299,1.75,Y420Y,3'-to-5'_exonuclease,T1260C,T to C,synonymous SNV,286,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1260C,Y420Y,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease G456G,19407,7.67,G456G,3'-to-5'_exonuclease,A1368G,A to G,synonymous SNV,391,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1368G,G456G,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,3'-to-5'_exonuclease M500I,19539,8.35,M500I,3'-to-5'_exonuclease,G1500A,G to A,nonsynonymous SNV,587,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1500A,M500I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,endoRNAse P23L,19688,98.91,P23L,endoRNAse,C68T,C to T,nonsynonymous SNV,274,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C68T,P23L,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,endoRNAse F43F,19749,1.03,F43F,endoRNAse,T129C,T to C,synonymous SNV,390,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T129C,F43F,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,endoRNAse T48I,19763,3.64,T48I,endoRNAse,C143T,C to T,nonsynonymous SNV,412,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C143T,T48I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,endoRNAse V186I,20176,1.14,V186I,endoRNAse,G556A,G to A,nonsynonymous SNV,263,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G556A,V186I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,endoRNAse N199S,20216,100,N199S,endoRNAse,A596G,A to G,nonsynonymous SNV,207,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A596G,N199S,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,endoRNAse I269I,20427,37.5,I269I,endoRNAse,T807C,T to C,synonymous SNV,432,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T807C,I269I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,endoRNAse I295I,20505,1.17,I295I,endoRNAse,T885A,T to A,synonymous SNV,428,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T885A,I295I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,2'-O-ribose_methyltransferase S74S,20880,100,S74S,2'-O-ribose_methyltransferase,T222C,T to C,synonymous SNV,82,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T222C,S74S,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein V16V,21610,2.51,V16V,surface_glycoprotein,T48C,T to C,synonymous SNV,359,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T48C,V16V,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein G72G,21778,4.84,G72G,surface_glycoprotein,G216A,G to A,synonymous SNV,124,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G216A,G72G,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein P85P,21817,4.92,P85P,surface_glycoprotein,A255G,A to G,synonymous SNV,122,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A255G,P85P,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein D138N,21974,100,D138N,surface_glycoprotein,G412A,G to A,nonsynonymous SNV,257,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G412A,D138N,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein Y145Y,21997,8.68,Y145Y,surface_glycoprotein,C435T,C to T,synonymous SNV,288,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C435T,Y145Y,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein K150E,22010,1.08,K150E,surface_glycoprotein,A448G,A to G,nonsynonymous SNV,277,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A448G,K150E,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein C166C,22060,1.95,C166C,surface_glycoprotein,C498T,C to T,synonymous SNV,205,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C498T,C166C,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein G252S,22316,100,G252S,surface_glycoprotein,G754A,G to A,nonsynonymous SNV,182,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G754A,G252S,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein L441L,22885,2.18,L441L,surface_glycoprotein,T1323C,T to C,synonymous SNV,275,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1323C,L441L,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein E583E,23311,2.38,E583E,surface_glycoprotein,G1749A,G to A,synonymous SNV,168,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1749A,E583E,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein R678W,23594,3.55,R678W,surface_glycoprotein,C2032T,C to T,nonsynonymous SNV,197,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2032T,R678W,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein L844L,24094,2.81,L844L,surface_glycoprotein,C2532T,C to T,synonymous SNV,178,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2532T,L844L,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein A866A,24160,2.94,A866A,surface_glycoprotein,T2598C,T to C,synonymous SNV,136,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T2598C,A866A,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein G994G,24544,100,G994G,surface_glycoprotein,C2982T,C to T,synonymous SNV,140,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2982T,G994G,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein R1014R,24604,2.26,R1014R,surface_glycoprotein,A3042G,A to G,synonymous SNV,133,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A3042G,R1014R,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein A1073T,24779,100,A1073T,surface_glycoprotein,G3217A,G to A,nonsynonymous SNV,95,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G3217A,A1073T,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein K1144R,24993,100,K1144R,surface_glycoprotein,A3431G,A to G,nonsynonymous SNV,90,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A3431G,K1144R,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,surface_glycoprotein V1259V,25339,1.99,V1259V,surface_glycoprotein,G3777A,G to A,synonymous SNV,251,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G3777A,V1259V,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,envelope_protein L27L,25474,1.06,L27L,envelope_protein,G81A,G to A,synonymous SNV,378,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G81A,L27L,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,envelope_protein V47I,25532,1,V47I,envelope_protein,G139A,G to A,nonsynonymous SNV,200,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G139A,V47I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,envelope_protein N66N,25591,2.99,N66N,envelope_protein,T198C,T to C,synonymous SNV,234,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T198C,N66N,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,membrane_glycoprotein A85T,25924,7.62,A85T,membrane_glycoprotein,G253A,G to A,nonsynonymous SNV,210,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G253A,A85T,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,membrane_glycoprotein L90S,25940,2.51,L90S,membrane_glycoprotein,T269C,T to C,nonsynonymous SNV,199,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T269C,L90S,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,membrane_glycoprotein L93L,25950,100,L93L,membrane_glycoprotein,C279T,C to T,synonymous SNV,174,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C279T,L93L,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,ORF6_protein F22L,26414,1.31,F22L,ORF6_protein,T64C,T to C,nonsynonymous SNV,540,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T64C,F22L,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,ORF7a_protein L12P,26577,99.44,L12P,ORF7a_protein,T35C,T to C,nonsynonymous SNV,358,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T35C,L12P,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,ORF7a_protein L30F,26630,38.46,L30F,ORF7a_protein,C88T,C to T,nonsynonymous SNV,143,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C88T,L30F,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,ORF7a_protein L31L,26635,38.51,L31L,ORF7a_protein,A93G,A to G,synonymous SNV,148,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A93G,L31L,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,ORF7a_protein F87F,26803,97.06,F87F,ORF7a_protein,C261T,C to T,synonymous SNV,34,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C261T,F87F,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,ORF8_protein C90C,27184,100,C90C,ORF8_protein,C270T,C to T,synonymous SNV,169,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C270T,C90C,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,ORF8_protein S97N,27204,100,S97N,ORF8_protein,G290A,G to A,nonsynonymous SNV,277,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G290A,S97N,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,ORF8_protein R101R,27217,99.28,R101R,ORF8_protein,T303C,T to C,synonymous SNV,416,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T303C,R101R,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein G37E,27404,100,G37E,nucleocapsid_phosphoprotein,G110A,G to A,nonsynonymous SNV,699,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G110A,G37E,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein I43V,27421,48.63,I43V,nucleocapsid_phosphoprotein,A127G,A to G,nonsynonymous SNV,950,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A127G,I43V,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein E76E,27522,2.06,E76E,nucleocapsid_phosphoprotein,A228G,A to G,synonymous SNV,922,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A228G,E76E,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein V85M,27547,4.14,V85M,nucleocapsid_phosphoprotein,G253A,G to A,nonsynonymous SNV,1063,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G253A,V85M,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein P106S,27610,1.02,P106S,nucleocapsid_phosphoprotein,C316T,C to T,nonsynonymous SNV,1083,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C316T,P106S,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein K126R,27671,1.28,K126R,nucleocapsid_phosphoprotein,A377G,A to G,nonsynonymous SNV,703,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A377G,K126R,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein I140T,27713,99.77,I140T,nucleocapsid_phosphoprotein,T419C,T to C,nonsynonymous SNV,441,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T419C,I140T,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein D141D,27717,43.1,D141D,nucleocapsid_phosphoprotein,C423T,C to T,synonymous SNV,465,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C423T,D141D,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein I145I,27729,3.26,I145I,nucleocapsid_phosphoprotein,C435T,C to T,synonymous SNV,522,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C435T,I145I,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein D148D,27738,100,D148D,nucleocapsid_phosphoprotein,C444T,C to T,synonymous SNV,450,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C444T,D148D,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein R206R,27912,99.41,R206R,nucleocapsid_phosphoprotein,C618T,C to T,synonymous SNV,509,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C618T,R206R,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein R280R,28134,1.16,R280R,nucleocapsid_phosphoprotein,A840G,A to G,synonymous SNV,344,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A840G,R280R,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein K319K,28251,8.02,K319K,nucleocapsid_phosphoprotein,A957G,A to G,synonymous SNV,374,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A957G,K319K,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein S386S,28452,100,S386S,nucleocapsid_phosphoprotein,A1158G,A to G,synonymous SNV,217,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1158G,S386S,-
-240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq,nucleocapsid_phosphoprotein R395G,28477,2.71,R395G,nucleocapsid_phosphoprotein,A1183G,A to G,nonsynonymous SNV,295,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1183G,R395G,-
+240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq.gz,nsp2 N8N,829,1.74,N8N,nsp2,C24T,C to T,complex,459,rSARS-CoV-2_delta3a/7b_Remdesivir,No,C24T,N8N,nsp2: N8N; C24T
+240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq.gz,nsp2 T34I,906,1.27,T34I,nsp2,C101T,C to T,stopgain,236,rSARS-CoV-2_delta3a/7b_Remdesivir,No,C101T,T34I,nsp2: T34I; C101T
+240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq.gz,nsp3 L1477L,7150,2.93,L1477L,nsp3,A4431G,A to G,stopgain,205,rSARS-CoV-2_delta3a/7b_Remdesivir,No,A4431G,L1477L,nsp3: L1477L; A4431G
+240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq.gz,nsp4 G276D,9381,1.08,G276D,nsp4,G827A,G to A,stoploss,186,rSARS-CoV-2_delta3a/7b_Remdesivir,No,G827A,G276D,nsp4: G276D; G827A
+240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq.gz,RdRp V557V,15111,3.7,V557V,RdRp,A1671G,A to G,stoploss,405,rSARS-CoV-2_delta3a/7b_Remdesivir,No,A1671G,V557V,-
+240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq.gz,RdRp M633L,15337,1.3,M633L,RdRp,A1897T,A to T,stoploss,384,rSARS-CoV-2_delta3a/7b_Remdesivir,No,A1897T,M633L,-
+240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq.gz,endoRNAse I295I,20505,3.29,I295I,endoRNAse,T885A,T to A,random_col,516,rSARS-CoV-2_delta3a/7b_Remdesivir,No,T885A,I295I,-
+240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq.gz,surface_glycoprotein T29A,21647,2,T29A,surface_glycoprotein,A85G,A to G,nonsynonymous SNV,100,rSARS-CoV-2_delta3a/7b_Remdesivir,No,A85G,T29A,-
+240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq.gz,surface_glycoprotein T167I,22062,1.39,T167I,surface_glycoprotein,C500T,C to T,nonsynonymous SNV,216,rSARS-CoV-2_delta3a/7b_Remdesivir,No,C500T,T167I,-
+240229_GSU_CL_002_SARS2_d3a7b_remdesivir.fastq.gz,nucleocapsid_phosphoprotein K448*,28636,2.65,K448*,nucleocapsid_phosphoprotein,A1342T,A to T,stopgain,151,rSARS-CoV-2_delta3a/7b_Remdesivir,No,A1342T,K448*,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,leader_protein N178N,799,99.12,N178N,leader_protein,C534T,C to T,synonymous SNV,340,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C534T,N178N,leader_protein: N178N; C534T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,leader_protein G179G,802,100,G179G,leader_protein,A537G,A to G,synonymous SNV,337,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A537G,G179G,leader_protein: G179G; A537G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 L24L,877,4.56,L24L,nsp2,T72C,T to C,synonymous SNV,285,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T72C,L24L,nsp2: L24L; T72C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 C51C,958,1.06,C51C,nsp2,C153T,C to T,synonymous SNV,188,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C153T,C51C,nsp2: C51C; C153T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 N130D,1193,3.27,N130D,nsp2,A388G,A to G,nonsynonymous SNV,306,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A388G,N130D,nsp2: N130D; A388G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 T149T,1252,96.62,T149T,nsp2,T447C,T to C,synonymous SNV,325,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T447C,T149T,nsp2: T149T; T447C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 G165D,1299,100,G165D,nsp2,G494A,G to A,nonsynonymous SNV,530,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G494A,G165D,nsp2: G165D; G494A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 E272G,1620,100,E272G,nsp2,A815G,A to G,nonsynonymous SNV,230,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A815G,E272G,nsp2: E272G; A815G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 F319F,1762,100,F319F,nsp2,C957T,C to T,synonymous SNV,312,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C957T,F319F,nsp2: F319F; C957T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 R380R,1945,99.26,R380R,nsp2,T1140C,T to C,synonymous SNV,270,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1140C,R380R,nsp2: R380R; T1140C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 L398L,1999,99.57,L398L,nsp2,G1194A,G to A,synonymous SNV,230,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1194A,L398L,nsp2: L398L; G1194A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 L400L,2005,99.56,L400L,nsp2,C1200T,C to T,synonymous SNV,228,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1200T,L400L,nsp2: L400L; C1200T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 A476T,2231,3.97,A476T,nsp2,G1426A,G to A,nonsynonymous SNV,731,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1426A,A476T,nsp2: A476T; G1426A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 C487Y,2265,1.14,C487Y,nsp2,G1460A,G to A,nonsynonymous SNV,615,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1460A,C487Y,nsp2: C487Y; G1460A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 Y537Y,2416,3.33,Y537Y,nsp2,C1611T,C to T,synonymous SNV,481,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1611T,Y537Y,nsp2: Y537Y; C1611T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 V541I,2426,100,V541I,nsp2,G1621A,G to A,nonsynonymous SNV,364,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1621A,V541I,nsp2: V541I; G1621A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 E545E,2440,1.49,E545E,nsp2,A1635G,A to G,synonymous SNV,335,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1635G,E545E,nsp2: E545E; A1635G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 V577I,2534,100,V577I,nsp2,G1729A,G to A,nonsynonymous SNV,107,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1729A,V577I,nsp2: V577I; G1729A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 A596A,2593,7.61,A596A,nsp2,T1788C,T to C,synonymous SNV,92,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1788C,A596A,nsp2: A596A; T1788C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 T601T,2608,9.89,T601T,nsp2,A1803G,A to G,synonymous SNV,91,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1803G,T601T,nsp2: T601T; A1803G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 N606N,2623,4.85,N606N,nsp2,C1818T,C to T,synonymous SNV,103,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1818T,N606N,nsp2: N606N; C1818T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp2 N631N,2698,3.78,N631N,nsp2,T1893C,T to C,synonymous SNV,185,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1893C,N631N,nsp2: N631N; T1893C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 F53F,2878,39.25,F53F,nsp3,C159T,C to T,synonymous SNV,530,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C159T,F53F,nsp3: F53F; C159T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 T73I,2937,99.65,T73I,nsp3,C218T,C to T,nonsynonymous SNV,282,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C218T,T73I,nsp3: T73I; C218T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 T133I,3117,1.1,T133I,nsp3,C398T,C to T,nonsynonymous SNV,272,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C398T,T133I,nsp3: T133I; C398T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 D136D,3127,100,D136D,nsp3,T408C,T to C,synonymous SNV,189,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T408C,D136D,nsp3: D136D; T408C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 Q152R,3174,35.07,Q152R,nsp3,A455G,A to G,nonsynonymous SNV,211,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A455G,Q152R,nsp3: Q152R; A455G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 E155E,3184,1.86,E155E,nsp3,A465G,A to G,synonymous SNV,215,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A465G,E155E,nsp3: E155E; A465G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 G171S,3230,40.34,G171S,nsp3,G511A,G to A,nonsynonymous SNV,176,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G511A,G171S,nsp3: G171S; G511A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 S176N,3246,5.39,S176N,nsp3,G527A,G to A,nonsynonymous SNV,204,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G527A,S176N,nsp3: S176N; G527A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 L327L,3700,100,L327L,nsp3,T981C,T to C,synonymous SNV,230,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T981C,L327L,nsp3: L327L; T981C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 F336S,3726,100,F336S,nsp3,T1007C,T to C,nonsynonymous SNV,289,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1007C,F336S,nsp3: F336S; T1007C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 E382K,3863,1.18,E382K,nsp3,G1144A,G to A,nonsynonymous SNV,761,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1144A,E382K,nsp3: E382K; G1144A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 K384E,3869,44.73,K384E,nsp3,A1150G,A to G,nonsynonymous SNV,702,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1150G,K384E,nsp3: K384E; A1150G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 F396S,3906,1.05,F396S,nsp3,T1187C,T to C,nonsynonymous SNV,571,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1187C,F396S,nsp3: F396S; T1187C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 T504T,4231,3.5,T504T,nsp3,A1512G,A to G,synonymous SNV,143,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1512G,T504T,nsp3: T504T; A1512G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 K569K,4426,1.12,K569K,nsp3,A1707G,A to G,synonymous SNV,268,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1707G,K569K,nsp3: K569K; A1707G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 V766V,5017,45.76,V766V,nsp3,G2298A,G to A,synonymous SNV,118,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G2298A,V766V,nsp3: V766V; G2298A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 T819I,5175,4.21,T819I,nsp3,C2456T,C to T,nonsynonymous SNV,404,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2456T,T819I,nsp3: T819I; C2456T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 N854N,5281,1.86,N854N,nsp3,C2562T,C to T,synonymous SNV,429,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2562T,N854N,nsp3: N854N; C2562T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 E869E,5326,100,E869E,nsp3,G2607A,G to A,synonymous SNV,278,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G2607A,E869E,nsp3: E869E; G2607A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 L895L,5404,2.29,L895L,nsp3,T2685C,T to C,synonymous SNV,350,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T2685C,L895L,nsp3: L895L; T2685C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 Q941Q,5542,100,Q941Q,nsp3,G2823A,G to A,synonymous SNV,359,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G2823A,Q941Q,nsp3: Q941Q; G2823A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 K977E,5648,3.08,K977E,nsp3,A2929G,A to G,nonsynonymous SNV,130,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A2929G,K977E,nsp3: K977E; A2929G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 Y1055Y,5884,100,Y1055Y,nsp3,C3165T,C to T,synonymous SNV,125,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C3165T,Y1055Y,nsp3: Y1055Y; C3165T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 D1079N,5954,48.31,D1079N,nsp3,G3235A,G to A,nonsynonymous SNV,89,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G3235A,D1079N,nsp3: D1079N; G3235A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 N1116D,6065,2.06,N1116D,nsp3,A3346G,A to G,nonsynonymous SNV,97,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A3346G,N1116D,nsp3: N1116D; A3346G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 K1241E,6440,1.6,K1241E,nsp3,A3721G,A to G,nonsynonymous SNV,250,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A3721G,K1241E,nsp3: K1241E; A3721G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 A1279T,6554,100,A1279T,nsp3,G3835A,G to A,nonsynonymous SNV,77,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G3835A,A1279T,nsp3: A1279T; G3835A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 A1280A,6559,100,A1280A,nsp3,T3840C,T to C,synonymous SNV,77,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T3840C,A1280A,nsp3: A1280A; T3840C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 A1431T,7010,100,A1431T,nsp3,G4291A,G to A,complex,170,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G4291A,A1431T,nsp3: A1431T; G4291A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 A1431A,7012,1.98,A1431A,nsp3,T4293C,T to C,complex,202,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T4293C,A1431A,nsp3: A1431A; T4293C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 P1469S,7124,99.35,P1469S,nsp3,C4405T,C to T,nonsynonymous SNV,153,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C4405T,P1469S,nsp3: P1469S; C4405T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 D1481D,7162,100,D1481D,nsp3,C4443T,C to T,synonymous SNV,208,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C4443T,D1481D,nsp3: D1481D; C4443T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 A1527V,7299,38.72,A1527V,nsp3,C4580T,C to T,nonsynonymous SNV,235,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C4580T,A1527V,nsp3: A1527V; C4580T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 R1614K,7560,45.02,R1614K,nsp3,G4841A,G to A,nonsynonymous SNV,271,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G4841A,R1614K,nsp3: R1614K; G4841A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 K1660R,7698,45.7,K1660R,nsp3,A4979G,A to G,complex,186,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A4979G,K1660R,nsp3: K1660R; A4979G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 K1660K,7699,1.06,K1660K,nsp3,A4980G,A to G,complex,188,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A4980G,K1660K,nsp3: K1660K; A4980G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 L1709L,7844,42.49,L1709L,nsp3,C5125T,C to T,synonymous SNV,233,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C5125T,L1709L,nsp3: L1709L; C5125T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 C1731Y,7911,1.23,C1731Y,nsp3,G5192A,G to A,nonsynonymous SNV,243,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G5192A,C1731Y,nsp3: C1731Y; G5192A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 L1791F,8090,100,L1791F,nsp3,C5371T,C to T,nonsynonymous SNV,269,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C5371T,L1791F,nsp3: L1791F; C5371T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 T1797I,8109,3.99,T1797I,nsp3,C5390T,C to T,nonsynonymous SNV,301,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C5390T,T1797I,nsp3: T1797I; C5390T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp3 I1816V,8165,47.34,I1816V,nsp3,A5446G,A to G,nonsynonymous SNV,207,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A5446G,I1816V,nsp3: I1816V; A5446G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp4 V129V,8941,4.41,V129V,nsp4,T387C,T to C,synonymous SNV,204,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T387C,V129V,nsp4: V129V; T387C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp4 N131N,8947,100,N131N,nsp4,C393T,C to T,synonymous SNV,160,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C393T,N131N,nsp4: N131N; C393T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp4 Y134Y,8956,34.84,Y134Y,nsp4,C402T,C to T,synonymous SNV,155,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C402T,Y134Y,nsp4: Y134Y; C402T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp4 E141E,8977,1.24,E141E,nsp4,G423A,G to A,synonymous SNV,161,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G423A,E141E,nsp4: E141E; G423A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp4 E219E,9211,1.44,E219E,nsp4,G657A,G to A,synonymous SNV,208,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G657A,E219E,nsp4: E219E; G657A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp4 A282T,9398,100,A282T,nsp4,G844A,G to A,nonsynonymous SNV,90,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G844A,A282T,nsp4: A282T; G844A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp4 V294I,9434,42.2,V294I,nsp4,G880A,G to A,nonsynonymous SNV,109,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G880A,V294I,nsp4: V294I; G880A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp4 I345I,9589,98.41,I345I,nsp4,T1035C,T to C,synonymous SNV,63,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1035C,I345I,nsp4: I345I; T1035C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp4 F390S,9723,46.74,F390S,nsp4,T1169C,T to C,nonsynonymous SNV,184,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1169C,F390S,nsp4: F390S; T1169C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3C-like_proteinase T25I,10128,2.68,T25I,3C-like_proteinase,C74T,C to T,nonsynonymous SNV,411,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C74T,T25I,3C-like_proteinase: T25I; C74T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3C-like_proteinase M82I,10300,7.1,M82I,3C-like_proteinase,G246A,G to A,nonsynonymous SNV,338,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G246A,M82I,3C-like_proteinase: M82I; G246A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3C-like_proteinase D92D,10330,35.61,D92D,3C-like_proteinase,T276C,T to C,synonymous SNV,264,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T276C,D92D,3C-like_proteinase: D92D; T276C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3C-like_proteinase Y118Y,10408,100,Y118Y,3C-like_proteinase,C354T,C to T,synonymous SNV,109,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C354T,Y118Y,3C-like_proteinase: Y118Y; C354T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3C-like_proteinase Y126Y,10432,100,Y126Y,3C-like_proteinase,C378T,C to T,synonymous SNV,108,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C378T,Y126Y,3C-like_proteinase: Y126Y; C378T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3C-like_proteinase A193V,10632,1.06,A193V,3C-like_proteinase,C578T,C to T,nonsynonymous SNV,188,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C578T,A193V,3C-like_proteinase: A193V; C578T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3C-like_proteinase L220L,10714,4.73,L220L,3C-like_proteinase,C660T,C to T,synonymous SNV,275,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C660T,L220L,3C-like_proteinase: L220L; C660T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3C-like_proteinase Y237Y,10765,1.51,Y237Y,3C-like_proteinase,C711T,C to T,synonymous SNV,265,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C711T,Y237Y,3C-like_proteinase: Y237Y; C711T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3C-like_proteinase A260T,10832,100,A260T,3C-like_proteinase,G778A,G to A,nonsynonymous SNV,134,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G778A,A260T,3C-like_proteinase: A260T; G778A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp6 K4K,10984,1.2,K4K,nsp6,A12G,A to G,synonymous SNV,250,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A12G,K4K,nsp6: K4K; A12G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp6 R5G,10985,8.43,R5G,nsp6,A13G,A to G,nonsynonymous SNV,249,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A13G,R5G,nsp6: R5G; A13G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp6 K8R,10995,45.23,K8R,nsp6,A23G,A to G,nonsynonymous SNV,241,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A23G,K8R,nsp6: K8R; A23G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp6 T20A,11030,3.95,T20A,nsp6,A58G,A to G,nonsynonymous SNV,228,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A58G,T20A,nsp6: T20A; A58G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp6 V78I,11204,5.75,V78I,nsp6,G232A,G to A,nonsynonymous SNV,226,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G232A,V78I,nsp6: V78I; G232A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp6 K111R,11304,41.22,K111R,nsp6,A332G,A to G,nonsynonymous SNV,490,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A332G,K111R,nsp6: K111R; A332G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp6 I162T,11457,100,I162T,nsp6,T485C,T to C,nonsynonymous SNV,286,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T485C,I162T,nsp6: I162T; T485C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp6 T172T,11488,35.85,T172T,nsp6,T516C,T to C,synonymous SNV,318,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T516C,T172T,nsp6: T172T; T516C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp6 T222T,11638,5.08,T222T,nsp6,T666C,T to C,synonymous SNV,453,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T666C,T222T,nsp6: T222T; T666C
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp8 V131I,12482,100,V131I,nsp8,G391A,G to A,nonsynonymous SNV,57,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G391A,V131I,nsp8: V131I; G391A
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp8 D134D,12493,28.57,D134D,nsp8,C402T,C to T,synonymous SNV,70,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C402T,D134D,nsp8: D134D; C402T
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp9 T67T,12886,1.07,T67T,nsp9,A201G,A to G,synonymous SNV,374,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A201G,T67T,nsp9: T67T; A201G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nsp9 T77T,12916,1.78,T77T,nsp9,A231G,A to G,synonymous SNV,338,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A231G,T77T,nsp9: T77T; A231G
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp T26T,13518,91.89,T26T,RdRp,T78C,T to C,synonymous SNV,111,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T78C,T26T,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp D36D,13548,100,D36D,RdRp,C108T,C to T,synonymous SNV,51,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C108T,D36D,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp K143T,13868,100,K143T,RdRp,A428C,A to C,nonsynonymous SNV,140,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A428C,K143T,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp T189T,14007,2.13,T189T,RdRp,A567G,A to G,synonymous SNV,328,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A567G,T189T,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp L212L,14076,5.69,L212L,RdRp,C636T,C to T,synonymous SNV,404,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C636T,L212L,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp Q224R,14111,10.7,Q224R,RdRp,A671G,A to G,nonsynonymous SNV,374,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A671G,Q224R,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp L251L,14191,48.12,L251L,RdRp,T751C,T to C,synonymous SNV,133,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T751C,L251L,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp P264P,14232,2.5,P264P,RdRp,T792C,T to C,synonymous SNV,160,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T792C,P264P,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp S397S,14631,99.57,S397S,RdRp,A1191G,A to G,synonymous SNV,234,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1191G,S397S,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp N447S,14780,100,N447S,RdRp,A1340G,A to G,nonsynonymous SNV,153,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1340G,N447S,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp E474E,14862,41.48,E474E,RdRp,A1422G,A to G,synonymous SNV,135,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1422G,E474E,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp V476I,14866,100,V476I,RdRp,G1426A,G to A,nonsynonymous SNV,132,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1426A,V476I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp G486G,14898,7.41,G486G,RdRp,C1458T,C to T,synonymous SNV,135,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1458T,G486G,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp Y521Y,15003,1.4,Y521Y,RdRp,T1563C,T to C,synonymous SNV,215,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1563C,Y521Y,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp H599H,15237,1.2,H599H,RdRp,C1797T,C to T,synonymous SNV,250,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1797T,H599H,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,RdRp H898H,16134,44.96,H898H,RdRp,C2694T,C to T,synonymous SNV,407,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2694T,H898H,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase C8C,16260,1.73,C8C,helicase,C24T,C to T,synonymous SNV,289,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C24T,C8C,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase G54G,16398,1.51,G54G,helicase,T162C,T to C,synonymous SNV,265,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T162C,G54G,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase Y149Y,16683,1.16,Y149Y,helicase,T447C,T to C,synonymous SNV,517,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T447C,Y149Y,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase I195M,16821,1.93,I195M,helicase,A585G,A to G,nonsynonymous SNV,415,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A585G,I195M,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase V209I,16861,1.12,V209I,helicase,G625A,G to A,nonsynonymous SNV,268,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G625A,V209I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase K271E,17047,100,K271E,helicase,A811G,A to G,nonsynonymous SNV,67,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A811G,K271E,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase H290Y,17104,98.13,H290Y,helicase,C868T,C to T,nonsynonymous SNV,107,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C868T,H290Y,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase Y306Y,17154,41,Y306Y,helicase,T918C,T to C,synonymous SNV,200,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T918C,Y306Y,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase E375E,17361,40.69,E375E,helicase,A1125G,A to G,synonymous SNV,231,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1125G,E375E,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase L384L,17388,38.17,L384L,helicase,G1152A,G to A,synonymous SNV,241,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1152A,L384L,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase P504P,17748,3.25,P504P,helicase,T1512C,T to C,synonymous SNV,123,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1512C,P504P,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase A505T,17749,3.25,A505T,helicase,G1513A,G to A,nonsynonymous SNV,123,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1513A,A505T,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase V558V,17910,100,V558V,helicase,A1674G,A to G,synonymous SNV,89,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1674G,V558V,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,helicase V597M,18025,98.47,V597M,helicase,G1789A,G to A,nonsynonymous SNV,197,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1789A,V597M,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease K32K,18135,7.35,K32K,3'-to-5'_exonuclease,A96G,A to G,synonymous SNV,204,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A96G,K32K,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease V40A,18158,1.03,V40A,3'-to-5'_exonuclease,T119C,T to C,nonsynonymous SNV,194,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T119C,V40A,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease I80M,18279,1.17,I80M,3'-to-5'_exonuclease,A240G,A to G,nonsynonymous SNV,171,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A240G,I80M,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease Q108Q,18363,100,Q108Q,3'-to-5'_exonuclease,G324A,G to A,synonymous SNV,142,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G324A,Q108Q,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease T113I,18377,1.41,T113I,3'-to-5'_exonuclease,C338T,C to T,nonsynonymous SNV,142,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C338T,T113I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease V120I,18397,99.03,V120I,3'-to-5'_exonuclease,G358A,G to A,nonsynonymous SNV,103,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G358A,V120I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease S178S,18573,6.23,S178S,3'-to-5'_exonuclease,T534C,T to C,synonymous SNV,385,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T534C,S178S,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease G189G,18606,1.94,G189G,3'-to-5'_exonuclease,C567T,C to T,synonymous SNV,413,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C567T,G189G,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease F377F,19170,4.26,F377F,3'-to-5'_exonuclease,C1131T,C to T,synonymous SNV,188,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C1131T,F377F,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease Y420Y,19299,1.75,Y420Y,3'-to-5'_exonuclease,T1260C,T to C,synonymous SNV,286,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1260C,Y420Y,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease G456G,19407,7.67,G456G,3'-to-5'_exonuclease,A1368G,A to G,synonymous SNV,391,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1368G,G456G,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,3'-to-5'_exonuclease M500I,19539,8.35,M500I,3'-to-5'_exonuclease,G1500A,G to A,nonsynonymous SNV,587,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1500A,M500I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,endoRNAse P23L,19688,98.91,P23L,endoRNAse,C68T,C to T,nonsynonymous SNV,274,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C68T,P23L,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,endoRNAse F43F,19749,1.03,F43F,endoRNAse,T129C,T to C,synonymous SNV,390,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T129C,F43F,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,endoRNAse T48I,19763,3.64,T48I,endoRNAse,C143T,C to T,nonsynonymous SNV,412,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C143T,T48I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,endoRNAse V186I,20176,1.14,V186I,endoRNAse,G556A,G to A,nonsynonymous SNV,263,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G556A,V186I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,endoRNAse N199S,20216,100,N199S,endoRNAse,A596G,A to G,nonsynonymous SNV,207,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A596G,N199S,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,endoRNAse I269I,20427,37.5,I269I,endoRNAse,T807C,T to C,synonymous SNV,432,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T807C,I269I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,endoRNAse I295I,20505,1.17,I295I,endoRNAse,T885A,T to A,synonymous SNV,428,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T885A,I295I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,2'-O-ribose_methyltransferase S74S,20880,100,S74S,2'-O-ribose_methyltransferase,T222C,T to C,synonymous SNV,82,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T222C,S74S,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein V16V,21610,2.51,V16V,surface_glycoprotein,T48C,T to C,synonymous SNV,359,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T48C,V16V,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein G72G,21778,4.84,G72G,surface_glycoprotein,G216A,G to A,synonymous SNV,124,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G216A,G72G,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein P85P,21817,4.92,P85P,surface_glycoprotein,A255G,A to G,synonymous SNV,122,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A255G,P85P,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein D138N,21974,100,D138N,surface_glycoprotein,G412A,G to A,nonsynonymous SNV,257,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G412A,D138N,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein Y145Y,21997,8.68,Y145Y,surface_glycoprotein,C435T,C to T,synonymous SNV,288,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C435T,Y145Y,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein K150E,22010,1.08,K150E,surface_glycoprotein,A448G,A to G,nonsynonymous SNV,277,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A448G,K150E,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein C166C,22060,1.95,C166C,surface_glycoprotein,C498T,C to T,synonymous SNV,205,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C498T,C166C,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein G252S,22316,100,G252S,surface_glycoprotein,G754A,G to A,nonsynonymous SNV,182,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G754A,G252S,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein L441L,22885,2.18,L441L,surface_glycoprotein,T1323C,T to C,synonymous SNV,275,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T1323C,L441L,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein E583E,23311,2.38,E583E,surface_glycoprotein,G1749A,G to A,synonymous SNV,168,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G1749A,E583E,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein R678W,23594,3.55,R678W,surface_glycoprotein,C2032T,C to T,nonsynonymous SNV,197,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2032T,R678W,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein L844L,24094,2.81,L844L,surface_glycoprotein,C2532T,C to T,synonymous SNV,178,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2532T,L844L,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein A866A,24160,2.94,A866A,surface_glycoprotein,T2598C,T to C,synonymous SNV,136,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T2598C,A866A,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein G994G,24544,100,G994G,surface_glycoprotein,C2982T,C to T,synonymous SNV,140,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C2982T,G994G,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein R1014R,24604,2.26,R1014R,surface_glycoprotein,A3042G,A to G,synonymous SNV,133,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A3042G,R1014R,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein A1073T,24779,100,A1073T,surface_glycoprotein,G3217A,G to A,nonsynonymous SNV,95,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G3217A,A1073T,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein K1144R,24993,100,K1144R,surface_glycoprotein,A3431G,A to G,nonsynonymous SNV,90,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A3431G,K1144R,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,surface_glycoprotein V1259V,25339,1.99,V1259V,surface_glycoprotein,G3777A,G to A,synonymous SNV,251,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G3777A,V1259V,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,envelope_protein L27L,25474,1.06,L27L,envelope_protein,G81A,G to A,synonymous SNV,378,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G81A,L27L,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,envelope_protein V47I,25532,1,V47I,envelope_protein,G139A,G to A,nonsynonymous SNV,200,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G139A,V47I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,envelope_protein N66N,25591,2.99,N66N,envelope_protein,T198C,T to C,synonymous SNV,234,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T198C,N66N,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,membrane_glycoprotein A85T,25924,7.62,A85T,membrane_glycoprotein,G253A,G to A,nonsynonymous SNV,210,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G253A,A85T,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,membrane_glycoprotein L90S,25940,2.51,L90S,membrane_glycoprotein,T269C,T to C,nonsynonymous SNV,199,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T269C,L90S,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,membrane_glycoprotein L93L,25950,100,L93L,membrane_glycoprotein,C279T,C to T,synonymous SNV,174,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C279T,L93L,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,ORF6_protein F22L,26414,1.31,F22L,ORF6_protein,T64C,T to C,nonsynonymous SNV,540,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T64C,F22L,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,ORF7a_protein L12P,26577,99.44,L12P,ORF7a_protein,T35C,T to C,nonsynonymous SNV,358,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T35C,L12P,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,ORF7a_protein L30F,26630,38.46,L30F,ORF7a_protein,C88T,C to T,nonsynonymous SNV,143,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C88T,L30F,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,ORF7a_protein L31L,26635,38.51,L31L,ORF7a_protein,A93G,A to G,synonymous SNV,148,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A93G,L31L,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,ORF7a_protein F87F,26803,97.06,F87F,ORF7a_protein,C261T,C to T,synonymous SNV,34,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C261T,F87F,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,ORF8_protein C90C,27184,100,C90C,ORF8_protein,C270T,C to T,synonymous SNV,169,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C270T,C90C,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,ORF8_protein S97N,27204,100,S97N,ORF8_protein,G290A,G to A,nonsynonymous SNV,277,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G290A,S97N,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,ORF8_protein R101R,27217,99.28,R101R,ORF8_protein,T303C,T to C,synonymous SNV,416,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T303C,R101R,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein G37E,27404,100,G37E,nucleocapsid_phosphoprotein,G110A,G to A,nonsynonymous SNV,699,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G110A,G37E,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein I43V,27421,48.63,I43V,nucleocapsid_phosphoprotein,A127G,A to G,nonsynonymous SNV,950,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A127G,I43V,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein E76E,27522,2.06,E76E,nucleocapsid_phosphoprotein,A228G,A to G,synonymous SNV,922,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A228G,E76E,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein V85M,27547,4.14,V85M,nucleocapsid_phosphoprotein,G253A,G to A,nonsynonymous SNV,1063,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,G253A,V85M,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein P106S,27610,1.02,P106S,nucleocapsid_phosphoprotein,C316T,C to T,nonsynonymous SNV,1083,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C316T,P106S,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein K126R,27671,1.28,K126R,nucleocapsid_phosphoprotein,A377G,A to G,nonsynonymous SNV,703,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A377G,K126R,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein I140T,27713,99.77,I140T,nucleocapsid_phosphoprotein,T419C,T to C,nonsynonymous SNV,441,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,T419C,I140T,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein D141D,27717,43.1,D141D,nucleocapsid_phosphoprotein,C423T,C to T,synonymous SNV,465,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C423T,D141D,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein I145I,27729,3.26,I145I,nucleocapsid_phosphoprotein,C435T,C to T,synonymous SNV,522,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C435T,I145I,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein D148D,27738,100,D148D,nucleocapsid_phosphoprotein,C444T,C to T,synonymous SNV,450,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C444T,D148D,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein R206R,27912,99.41,R206R,nucleocapsid_phosphoprotein,C618T,C to T,synonymous SNV,509,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,C618T,R206R,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein R280R,28134,1.16,R280R,nucleocapsid_phosphoprotein,A840G,A to G,synonymous SNV,344,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A840G,R280R,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein K319K,28251,8.02,K319K,nucleocapsid_phosphoprotein,A957G,A to G,synonymous SNV,374,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A957G,K319K,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein S386S,28452,100,S386S,nucleocapsid_phosphoprotein,A1158G,A to G,synonymous SNV,217,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1158G,S386S,-
+240229_GSU_CL_003_SARS2_d3a7b_molnupirivir.fastq.gz,nucleocapsid_phosphoprotein R395G,28477,2.71,R395G,nucleocapsid_phosphoprotein,A1183G,A to G,nonsynonymous SNV,295,rSARS-CoV-2_delta3a/7b_Molnupiravir,No,A1183G,R395G,-
