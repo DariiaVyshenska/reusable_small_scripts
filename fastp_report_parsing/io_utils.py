@@ -20,7 +20,7 @@ def extract_data(json_files, output_file_path):
 
     for json_file in json_files:
       basename = os.path.basename(json_file)
-      sample_id = [basename.replace('_report.json', '')]
+      sample_id = basename.replace('_report.json', '')
       fastp_stats = parse_fastp_stats(json_file)
       current_row = [sample_id] + fastp_stats
       writer.writerow(current_row)
