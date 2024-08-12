@@ -21,7 +21,7 @@ def get_full_ref_seq(gb_file_path: str) -> str:
       for record in SeqIO.parse(file, 'genbank'):
           return str(record.seq)
 
-def get_gene_locations(gb_file_path: str) -> List[Tuple[int, int, str, str]]:
+def get_gene_locations(gb_file_path: str) -> List[Tuple[int, int, str]]:
   """
   Extracts gene locations from a GeneBank file.
   
@@ -38,9 +38,8 @@ def get_gene_locations(gb_file_path: str) -> List[Tuple[int, int, str, str]]:
         if feature.type == 'CDS':
           start = int(feature.location.start) + 1
           end = int(feature.location.end)
-          gene_name = feature.qualifiers.get('gene', ['N/A'])[0]
           product = feature.qualifiers.get('product', ['N/A'])[0]
-          all_cds.append((start, end, gene_name, product))
+          all_cds.append((start, end, product))
   return all_cds
 
 def extract_sample_id(vcf_path: str) -> str:
@@ -132,7 +131,7 @@ def get_insert_placement(pos: int, mut_seq: str, full_ref_seq: str) -> str:
 def parse_record(
   sample_id: str, 
   record: vcfpy.Record, 
-  all_cds_regions: List[Tuple[int, int, str, str]],
+  all_cds_regions: List[Tuple[int, int, str]],
   full_ref_seq: str
   ) -> Tuple[bool, Optional[List[Any]]]:
   """
