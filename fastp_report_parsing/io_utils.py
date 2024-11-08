@@ -5,8 +5,9 @@ from parsers import parse_fastp_stats
 def extract_data(json_files, output_file_path):
   header = [
     'SAMPLE_ID', 'TOTAL_READS', 'R1_mean_len', 
-    'R2_mean_len', 'DUPLIC_RATE', 
-    'INSERT_SIZE_PEAK', 'INSERT_SIZE_UNKNOWN', 
+    # 'R2_mean_len', 'DUPLIC_RATE', 
+    'DUPLIC_RATE', 
+    # 'INSERT_SIZE_PEAK', 'INSERT_SIZE_UNKNOWN', 
     'GC_CONT_BEFORE_FILT', 'GC_CONT_AFTER_FILT', 
     'PASSED_FILT_READS', 'PASSED_FILT_PERCENT', 
     'LOW_QUAL_READS', 'LOW_QUAL_RATIO', 
