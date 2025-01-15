@@ -11,9 +11,9 @@ def reorder_columns(summary_df):
   return summary_df[new_col_order]
 
 def format_snp_table(snp_data):
-  f_snp_data = snp_data[['Sample', 'Protein', 'AminoCorrect', 'NucleotideChange', 'AF', 'Syn', 'MatPeptide']].copy()
+  f_snp_data = snp_data[['Sample', 'Protein', 'AminoCorrect', 'NucleotideChange', 'AF', 'Syn', 'Depth', 'MatPeptide']].copy()
   f_snp_data.columns = [
-    'SAMPLE_ID', 'PROTEIN', 'AA_CHANGE', 'NT_CHANGE', 'ALLELE_FREQ', 'MUTATION_TYPE', 'MAT_PEPTIDE_INFO'
+    'SAMPLE_ID', 'PROTEIN', 'AA_CHANGE', 'NT_CHANGE', 'ALLELE_FREQ', 'MUTATION_TYPE', 'DEPTH', 'MAT_PEPTIDE_INFO'
   ]
   f_snp_data['MUTATION_TYPE'] = f_snp_data['MUTATION_TYPE'].str.replace(' SNV', '')
   f_snp_data['SAMPLE_ID'] = f_snp_data['SAMPLE_ID'].str.replace('.fastq.gz', '')
