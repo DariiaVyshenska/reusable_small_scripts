@@ -9,10 +9,7 @@ def process_pileup(bam, codon_start_pos):
   codon_counts = defaultdict(int)
   ref_name = bam.references[0]
 
-  for pileup_column in bam.pileup(reference=ref_name, start=codon_start_pos-1, stop=codon_end_pos):
-    if pileup_column.pos < codon_start_pos - 1 or pileup_column.pos > codon_end_pos - 1:
-      continue
-
+  for pileup_column in bam.pileup(reference=ref_name, start=codon_start_pos-1, stop=codon_end_pos): # do I need stop position?  what does it do?
     for pileup_read in pileup_column.pileups:
       if pileup_read.is_del or pileup_read.is_refskip:
         continue
@@ -32,7 +29,7 @@ def process_pileup(bam, codon_start_pos):
       read_ids.add(read_id)
       codon = read[read_pos:read_pos+3]
       codon_counts[codon] += 1
-
+    break
   return codon_counts, len(read_ids)
 
 def extract_codon_frequencies(bam_file, codon_start_pos):
