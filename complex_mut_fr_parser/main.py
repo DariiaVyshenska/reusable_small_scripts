@@ -7,11 +7,11 @@ Created on Tue Aug  6 09:47:33 2024
 """
 import argparse
 from parsers import extract_codon_frequencies
-from io_utils import freq_dict_to_csv
+from io_utils import codon_stats_to_csv
 
 def main(bam_file_path, codon_start_pos, output_file_path):
   codon_frequencies = extract_codon_frequencies(bam_file_path, codon_start_pos)
-  freq_dict_to_csv(codon_frequencies, output_file_path, bam_file_path, codon_start_pos)
+  codon_stats_to_csv(codon_frequencies, output_file_path, bam_file_path, codon_start_pos)
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser(description='Extracts frequencies of complex mutations from INDEXED .bam file.',

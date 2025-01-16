@@ -36,7 +36,6 @@ def extract_codon_frequencies(bam_file, codon_start_pos):
   try:
     bam = open_and_validate_bam(bam_file)
     codon_counts, total_reads = process_pileup(bam, codon_start_pos)
-    print(calc_freq(codon_counts, total_reads))
     return calc_freq(codon_counts, total_reads)
   except Exception as e:
     print(e)

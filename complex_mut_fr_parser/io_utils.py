@@ -3,8 +3,8 @@ import pandas as pd
 import os
 from exceptions import GenomeRefError
 
-def freq_dict_to_csv(freq_dict, output_file_path, bam_file_path, codon_start_pos):
-  df = pd.DataFrame(list(freq_dict.items()), columns=['CODON', 'FREQUENCY'])
+def codon_stats_to_csv(codon_stats, output_file_path, bam_file_path, codon_start_pos):
+  df = pd.DataFrame(codon_stats, columns=['CODON', 'FREQUENCY', 'DEPTH'])
   df = df.sort_values(by='FREQUENCY', ascending=False)
   print(df)
   
