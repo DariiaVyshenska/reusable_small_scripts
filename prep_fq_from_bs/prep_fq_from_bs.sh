@@ -1,8 +1,9 @@
 #!/bin/bash
 
-if [[ "$#" -ne 3 ]]; then
+if [[ "$#" -ne 4 ]]; then
 	echo "Usage: $0 <lane> <input_path> <output_path>"
 	echo "<lane>: The lane number, either 1 or 2."
+	echo "<read_format>: If SE - 1, if PE - 2."
 	echo "<input_path>: Directory path containing subdirectories with .fastq.gz files from a BaseSpace project."
 	echo "<output_path>: Path to an empty directory for storing processed files. Existing data may be overwritten."
 	echo 
@@ -14,8 +15,9 @@ fi
 
 # Assigning arguments to variables
 lane="$1"
-input_path="$2"
-output_path="$3"
+read_format="$2"
+input_path="$3"
+output_path="$4"
 
 raw_reads_dir="${output_path}/raw-fastqs"
 concat_dir="${output_path}/concat_raw-fastqs"
@@ -52,7 +54,9 @@ copy_and_rename() {
 # if working with one lane files: copy to raw_reads with cleaned file name
 if [[ $lane == 1 ]]; then
 	copy_and_rename "_L001_R1_001" "_R1"
-	# copy_and_rename "_L001_R2_001" "_R2" # turn off for SE     
+	if [[ $read_format == 2 ]]; then
+		copy_and_rename "_L001_R2_001" "_R2" # turn off for SE
+	fi     
 
 	echo 
 	echo "All done!"
@@ -60,7 +64,9 @@ if [[ $lane == 1 ]]; then
 # concatinated files with clean name in a separate directory - concat_dir.
 elif [[ $lane == 2 ]]; then
 	copy_and_rename	"_R1_001" "_R1"
-	# copy_and_rename "_R2_001" "_R2" # turn off for SE
+	if [[ $read_format == 2 ]]; then
+		copy_and_rename "_R2_001" "_R2" # turn off for SE
+	fi
 	echo
 
 	mkdir -p "$concat_dir" || { echo "Failed to create 'concat_dir' directory in specified output path."; exit 1; }
