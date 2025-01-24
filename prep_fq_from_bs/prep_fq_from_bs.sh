@@ -8,7 +8,7 @@ if [[ "$#" -ne 4 ]]; then
 	echo "<output_path>: Path to an empty directory for storing processed files. Existing data may be overwritten."
 	echo 
 	echo "Example of usage:"
-	echo "./prep_fq_from_bs.sh 2 test_input_dir/two_lanes test_out_dir"
+	echo "./prep_fq_from_bs.sh 2 2 test_input_dir/two_lanes test_out_dir"
 	
 	exit 1
 fi
@@ -73,47 +73,32 @@ elif [[ $lane == 2 ]]; then
 	echo "Directory 'concat_dir' created successfully in ${output_path}."
 	echo
 
+	if [[ $read_format == 2 ]]; then
+		read_types="R1 R2"
+	else
+		read_types="R1"
+	fi
 
-	for file_path in "${raw_reads_dir}"/*_L001_R1.fastq.gz; do
-		file_basename=$(basename "$file_path" "_L001_R1.fastq.gz")
-		second_lane_file="${raw_reads_dir}/${file_basename}_L002_R1.fastq.gz"
-		concat_file_path="${concat_dir}/${file_basename}_R1.fastq.gz"
-		
-		if [[ -f "$second_lane_file" ]]; then
-			echo "Concatenating file: $concat_file_path ..."
-			cat "$file_path" "$second_lane_file" > "$concat_file_path" && echo "...done"
-			echo
-		else
-			echo '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
-					echo
-					echo "Error: Missing matching file for concatenation: $second_lane_file. No concatenation done for $file_basename"
-			echo
-			echo '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
-			echo
-		fi
-	done
-
-
-	# for read_type in R1 R2; do  # this is PE version
-	# 	for file_path in "${raw_reads_dir}"/*_L001_${read_type}.fastq.gz; do
-	# 		file_basename=$(basename "$file_path" "_L001_${read_type}.fastq.gz")
-	# 		second_lane_file="${raw_reads_dir}/${file_basename}_L002_${read_type}.fastq.gz"
-	# 		concat_file_path="${concat_dir}/${file_basename}_${read_type}.fastq.gz"
+	for read_type in $read_types; do  # this is PE version
+		for file_path in "${raw_reads_dir}"/*_L001_${read_type}.fastq.gz; do
+			file_basename=$(basename "$file_path" "_L001_${read_type}.fastq.gz")
+			second_lane_file="${raw_reads_dir}/${file_basename}_L002_${read_type}.fastq.gz"
+			concat_file_path="${concat_dir}/${file_basename}_${read_type}.fastq.gz"
 			
-	# 		if [[ -f "$second_lane_file" ]]; then
-	# 			echo "Concatenating file: $concat_file_path ..."
-	# 			cat "$file_path" "$second_lane_file" > "$concat_file_path" && echo "...done"
-	# 			echo
-	# 		else
-	# 			echo '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
-  #   				echo
-  #   				echo "Error: Missing matching file for concatenation: $second_lane_file. No concatenation done for $file_basename"
-	# 			echo
-	# 			echo '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
-	# 			echo
-	# 		fi
-	# 	done
-	# done
+			if [[ -f "$second_lane_file" ]]; then
+				echo "Concatenating file: $concat_file_path ..."
+				cat "$file_path" "$second_lane_file" > "$concat_file_path" && echo "...done"
+				echo
+			else
+				echo '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+    				echo
+    				echo "Error: Missing matching file for concatenation: $second_lane_file. No concatenation done for $file_basename"
+				echo
+				echo '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+				echo
+			fi
+		done
+	done
 
 	echo
 	echo "All done!"
