@@ -16,7 +16,10 @@ def parse_fastp_stats(json_file_path):
   too_many_N_reads = data["filtering_result"]["too_many_N_reads"]
   too_short_reads = data["filtering_result"]["too_short_reads"]
 
-
+  if total_reads == 0:
+    print(f"Warning: Total reads for {json_file_path} is 0. Skipping this file.")
+    return [0] * 13  # Return a row of zeros if no reads are present
+  
   passed_filter_ratio = (passed_filter_reads / total_reads) * 100
   low_quality_ratio = (low_quality_reads / total_reads) * 100
   too_many_N_ratio = (too_many_N_reads / total_reads) * 100
@@ -32,12 +35,10 @@ def parse_fastp_stats(json_file_path):
 
   
   if (read_len_issues):
-    print(f"ATTENTION! File {json_file_path} has read length issues")
+    print(f"ATTENTION! File {json_file_path} has read length issues: r1_len={r1_len}, r1_len_before={r1_len_before}")
 
   return [
-    # total_reads, r1_len, r2_len, duplication_rate,
     total_reads, r1_len, duplication_rate,
-    # insert_size_peak, insert_size_unknown,
     gc_content_before, gc_content_after,
     passed_filter_reads, passed_filter_ratio,
     low_quality_reads, low_quality_ratio,
