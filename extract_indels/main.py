@@ -1,12 +1,12 @@
 import argparse
-from parsers import get_full_ref_seq, get_gene_locations, extract_sample_id, process_vcf_records
+from parsers import get_full_ref_seq, get_gene_locations, extract_file_name, process_vcf_records
 from utils import write_csv
 from typing import List, Tuple
 import logging
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def main(vcf_file_path: str, gb_file_path: str, output_path: str) -> None:
+def main(record_type: str, vcf_file_path: str, gb_file_path: str, output_path: str) -> None:
   try:
     all_cds_regions = get_gene_locations(gb_file_path)
     full_ref_seq = get_full_ref_seq(gb_file_path)
@@ -14,9 +14,9 @@ def main(vcf_file_path: str, gb_file_path: str, output_path: str) -> None:
     logging.error(f"Error getting gene locations: {e}")
     return
   
-  sample_id = extract_sample_id(vcf_file_path)
+  sample_id = extract_file_name(vcf_file_path)
   try:
-    data = process_vcf_records(sample_id, vcf_file_path, all_cds_regions, full_ref_seq)
+    data = process_vcf_records(record_type, sample_id, vcf_file_path, all_cds_regions, full_ref_seq)
   except Exception as e:
     logging.error(f"Error processing VCF records: {e}")
     return
@@ -35,6 +35,7 @@ if __name__ == '__main__':
     parser.add_argument('vcf_file_path', type=str, help='Path to the sorted vcf file')
     parser.add_argument('gb_file_path', type=str, help='Path to the GeneBank file')
     parser.add_argument('output_path', type=str, help='Path where the output CSV will be saved')
+    parser.add_argument('--vcf_type', choices=['legacy', 'mutect2', 'auto'], default='auto', help='Type of VCF input.')
     
     args = parser.parse_args()
-    main(args.vcf_file_path, args.gb_file_path, args.output_path)
+    main(args.vcf_type, args.vcf_file_path, args.gb_file_path, args.output_path)

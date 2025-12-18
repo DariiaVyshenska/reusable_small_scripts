@@ -21,8 +21,9 @@ def write_csv(sample_id: str, output_path: str, data: List) -> None:
   with open(full_indel_csv_filename, 'w', newline='') as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(['SAMPLE_ID', 'POSITION', 'REFERENCE_SEQ', 'ALTERNATIVE_SEQ', 
-                         'SEQ_DEPTH', 'ALT_SEQ_DEPTH', 'FREQUENCY', 'ADF_RATIO', 
-                         'ADR_RATIO', 'STRND_BIAS_PASS', 'VALID_CODON_LEN',  
-                         'CHANGE_TYPE', 'PRODUCT', 'PLACEMENT'])
+                         'SEQ_DEPTH', 'ALT_SEQ_DEPTH', 'FREQUENCY', 
+                        #  'ADF_RATIO', 'ADR_RATIO', 'STRND_BIAS_PASS', # no longer needed, keep for 'in case'
+                         'VALID_CODON_LEN',  
+                         'CHANGE_TYPE', 'PRODUCT'])
     for row in data:
       csv_writer.writerow(row)

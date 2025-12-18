@@ -1,11 +1,15 @@
 from Bio import SeqIO
 import os
 import vcfpy
-import logging
-from typing import List, Tuple, Optional, Any
+from typing import List, Tuple, Optional, Any, Iterable, Callable
 
-STRND_BIAS_THRESH = 0.9
-REF_SEQ_LEN_EXTRACT = 15
+RecordParser = Callable[
+    [str, str, vcfpy.Record, List[Tuple[int, int, str, str]]],
+    Optional[List[Any]]
+]
+
+def format_arr(arr: Iterable[Any]) -> str:
+  return ';'.join(str(el) for el in arr)
 
 def get_full_ref_seq(gb_file_path: str) -> str:
   """
@@ -21,7 +25,7 @@ def get_full_ref_seq(gb_file_path: str) -> str:
       for record in SeqIO.parse(file, 'genbank'):
           return str(record.seq)
 
-def get_gene_locations(gb_file_path: str) -> List[Tuple[int, int, str]]:
+def get_gene_locations(gb_file_path: str) -> List[Tuple[int, int, str, str]]:
   """
   Extracts gene locations from a GeneBank file.
   
@@ -42,7 +46,7 @@ def get_gene_locations(gb_file_path: str) -> List[Tuple[int, int, str]]:
           all_cds.append((start, end, product))
   return all_cds
 
-def extract_sample_id(vcf_path: str) -> str:
+def extract_file_name(vcf_path: str) -> str:
   """
   Extracts the sample ID from a VCF file path.
     
@@ -68,9 +72,15 @@ def parse_vcf(vcf_file_path: str) -> vcfpy.Reader:
   Returns:
     vcfpy.Reader: VCF reader object.
   """
-  return vcfpy.Reader.from_path(vcf_file_path)
+  reader = vcfpy.Reader.from_path(vcf_file_path)
+  if reader is None:
+    raise RuntimeError(f'Failed to parse VCF file: {vcf_file_path}')
+  return reader
 
-def get_cds_info(pos: int, cds_list: List[Tuple[int, int, str, str]]) -> Tuple[bool, Tuple[Any]]:
+def get_cds_info(
+  pos: int, 
+  cds_list: List[Tuple[int, int, str, str]]
+  ) -> Tuple[bool, Optional[str]]:
   """
   Gets CDS information for a given position.
     
@@ -83,71 +93,29 @@ def get_cds_info(pos: int, cds_list: List[Tuple[int, int, str, str]]) -> Tuple[b
   """
   for cds in cds_list:
     if cds[0] <= pos <= cds[1]:
-      return True, (cds[2])
-  return False, (None)
+      return True, cds[2]
+  return False, None
 
-def get_del_placement(pos: int, mut_seq: str, full_ref_seq: str) -> str:
-  """
-  Provides the string representation of an deletion placement in reference.
-  Deletion seq is marked by '*' and surrounded by 15 nt reference seq from both sides.
-
-  Parameters:
-      pos (int): Position of the mutation in the reference sequence.
-      mut_seq (str): Sequence of the mutation from vcf output (column 'REF' value).
-      full_ref_seq (str): The full reference nucleotide sequence.
-
-  Returns:
-      str: The reference sequence with the deletion marked by asterisks.
-  """
-  
-  result = []
-  idx = pos - 1
-  mut_len = len(mut_seq)
-  result.append(full_ref_seq[pos - REF_SEQ_LEN_EXTRACT:pos])
-  result.append(full_ref_seq[idx+1:idx + mut_len])
-  result.append(full_ref_seq[idx + mut_len:idx + mut_len + REF_SEQ_LEN_EXTRACT])
-  return '*'.join(result)
-
-def get_insert_placement(pos: int, mut_seq: str, full_ref_seq: str) -> str:
-  """
-  Provides the string representation of an insertion placement in reference.
-  Insertion seq is marked by '*' and surrounded by 15 nt reference seq from both sides.
-
-  Parameters:
-      pos (int): Position of the mutation in the reference sequence.
-      mut_seq (str): Sequence of the mutation (column 'ALT' value).
-      full_ref_seq (str): The full reference nucleotide sequence.
-
-  Returns:
-      str: The reference sequence with the insertion marked by asterisks.
-  """
-
-  result = []
-  result.append(full_ref_seq[pos - REF_SEQ_LEN_EXTRACT:pos])
-  result.append(mut_seq[1:])
-  result.append(full_ref_seq[pos:pos + REF_SEQ_LEN_EXTRACT])
-  return '*'.join(result)
-
-def parse_record(
+def parse_legacy_record(
+  vcf_sample_id: str,
   sample_id: str, 
   record: vcfpy.Record, 
-  all_cds_regions: List[Tuple[int, int, str]],
-  full_ref_seq: str
-  ) -> Tuple[bool, Optional[List[Any]]]:
+  all_cds_regions: List[Tuple[int, int, str, str]]
+  ) -> Optional[List[Any]]:
   """
   Parses a VCF record and extracts relevant information.
     
   Parameters:
-    sample_id (str): Sample ID.
+    vcf_sample_id (str): Sample ID as it appears in VCF.
+    sample_id (str): Sample ID from the file name.
     record (vcfpy.Record): VCF record.
     all_cds_regions (List[Tuple[int, int, str, str]]): List of gene locations.
-    full_ref_seq (str): full reference sequence string.
         
     Returns:
-      Tuple[bool, Optional[List[Any]]]: Validity of the record and extracted information.
+      Optional[List[Any]]: Valid record or None.
     """
   if record.ALT and len(record.REF) != len(record.ALT[0].value):
-    sample_call = record.call_for_sample['Sample1']
+    sample_call = record.call_for_sample[vcf_sample_id]
     dp = sample_call.data.get('DP')
     ad = sample_call.data.get('AD')
     freq = (round(ad / dp * 100, 2)) if dp else 0
@@ -157,28 +125,89 @@ def parse_record(
       ref = record.REF
       alt = record.ALT[0].value
       
-      adf = sample_call.data.get('ADF')
-      adr = sample_call.data.get('ADR')
-      adf_ratio = round(adf / (adf + adr), 2)
-      adr_ratio = round(adr / (adf + adr), 2)
-      strn_bias_status = (adf_ratio < STRND_BIAS_THRESH and adr_ratio < STRND_BIAS_THRESH)
       mut_type = 'deletion' if len(record.REF) > len(record.ALT[0].value) else 'insertion'
       valid_len = ((len(ref) - 1) % 3 == 0) if mut_type == 'deletion' else (len(alt) - 1) % 3 == 0
-      
 
-      placement =(
-        get_del_placement(pos, ref, full_ref_seq) 
-        if mut_type == 'deletion' 
-        else get_insert_placement(pos, alt, full_ref_seq))
       
-      _, (product) = get_cds_info(pos, all_cds_regions)
-      return True, [sample_id, pos, ref, alt, dp, ad, freq, 
-                    adf_ratio, adr_ratio, strn_bias_status, 
-                    valid_len, mut_type, product, placement]
-  return False, None
+      _, product = get_cds_info(pos, all_cds_regions)
+      return [sample_id, pos, ref, alt, dp, ad, freq, 
+              valid_len, mut_type, product]
+  return None
 
-def process_vcf_records(
+def parse_mutect2_record(
+  vcf_sample_id: str,
   sample_id: str, 
+  record: vcfpy.Record, 
+  all_cds_regions: List[Tuple[int, int, str, str]]
+  ) -> Optional[List[Any]]:
+  """
+  Parses a VCF record and extracts relevant information.
+    
+  Parameters:
+    vcf_sample_id (str): Sample ID as it appears in VCF.
+    sample_id (str): Sample ID from the file name.
+    record (vcfpy.Record): VCF record.
+    all_cds_regions (List[Tuple[int, int, str, str]]): List of gene locations.
+        
+    Returns:
+      Optional[List[Any]]: Valid record or None.
+  """
+  types_to_detect = ('DEL', 'INS', 'INDEL')
+  alts = record.ALT or []
+  if not any(alt.type in types_to_detect for alt in alts):
+    return None
+  
+  sample_call = record.call_for_sample[vcf_sample_id]
+  dp = sample_call.data.get('DP')
+  if dp is None or dp < 30:
+    return None
+  
+  af = sample_call.data.get('AF')
+  if af is None or all(f < 0.1 for f in af):
+    return None
+  
+  ad = sample_call.data.get('AD')[1:]
+  pos = record.POS
+  ref = record.REF
+  alt_formatted = format_arr(alt.value for alt in alts)
+  mut_type = format_arr(alt.type for alt in alts)
+  
+  valid_len = []
+  for el in alts:
+    if el.type == 'DEL':
+      valid_len.append((len(ref) - 1) % 3 == 0)
+    elif el.type == 'INS':
+      valid_len.append((len(el.value) - 1) % 3 == 0)
+    else:
+      valid_len.append('NA')
+
+  _, product = get_cds_info(pos, all_cds_regions)
+
+  return [sample_id, pos, ref, alt_formatted, dp, 
+                format_arr(ad), format_arr(af),
+                format_arr(valid_len), mut_type, product]
+
+
+def detect_record_type(vcf_header: vcfpy.Header) -> str:
+  return (
+    'mutect2' if any(
+    ((line.key == 'source') and (line.value == 'Mutect2')) 
+    for line in vcf_header.lines
+    ) else 'legacy'
+  )
+
+def get_record_parser(record_type: str) -> RecordParser:
+  return parse_legacy_record if record_type == 'legacy' else parse_mutect2_record
+
+def get_sample_name_from_vcf(vcf_reader: vcfpy.Reader) -> str:
+  sample_names = vcf_reader.header.samples.names
+  if len(sample_names) != 1:
+    raise ValueError(f"Expected exactly 1 sample, found {len(sample_names)}")
+  return sample_names[0]
+  
+def process_vcf_records(
+  record_type: str,
+  sample_id: str,
   vcf_file_path: str, 
   all_cds_regions: List[Tuple[int, int, str, str]],
   full_ref_seq: str
@@ -194,12 +223,16 @@ def process_vcf_records(
   Returns:
     List[List[Any]]: Extracted information from VCF records.
   """
-  data = []
-
   vcf_reader = parse_vcf(vcf_file_path)
+  if record_type == 'auto':
+    record_type = detect_record_type(vcf_reader.header)
+  record_parser = get_record_parser(record_type)
+  vcf_sample_id = get_sample_name_from_vcf(vcf_reader)
+
+  data = []
   for record in vcf_reader:
-    valid_record, indel_info = parse_record(sample_id, record, all_cds_regions, full_ref_seq)
-    if valid_record:
+    indel_info = record_parser(vcf_sample_id, sample_id, record, all_cds_regions)
+    if indel_info is not None:
       data.append(indel_info)
 
   return data
