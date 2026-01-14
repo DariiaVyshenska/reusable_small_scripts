@@ -168,30 +168,27 @@ def parse_mutect2_record(
   if dp is None or dp < 30:
     return None
   
-  af = sample_call.data.get('AF')
-  if af is None or all(f < 0.1 for f in af):
+  af = sample_call.data.get('AF')[0]
+  if (af is None) or (af < 0.1):
     return None
   
-  ad = sample_call.data.get('AD')[1:]
+  ad = sample_call.data.get('AD')[1]
   pos = record.POS
   ref = record.REF
-  alt_formatted = format_arr(alt.value for alt in alts)
-  mut_type = format_arr(alt.type for alt in alts)
+  alt_formatted = alts[0].value
+  mut_type = alts[0].type
   
-  valid_len = []
-  for el in alts:
-    if el.type == 'DEL':
-      valid_len.append((len(ref) - 1) % 3 == 0)
-    elif el.type == 'INS':
-      valid_len.append((len(el.value) - 1) % 3 == 0)
-    else:
-      valid_len.append('NA')
+  validity = 'NA'
+  if mut_type == 'DEL':
+    validity = (len(ref) - 1) % 3 == 0
+  elif mut_type == 'INS':
+    validity = (len(alts[0].value) - 1) % 3 == 0
 
   _, product = get_cds_info(pos, all_cds_regions)
 
   return [sample_id, pos, ref, alt_formatted, dp, 
-                format_arr(ad), format_arr(af),
-                format_arr(valid_len), mut_type, product]
+                ad, af,
+                validity, mut_type, product]
 
 
 def detect_record_type(vcf_header: vcfpy.Header) -> str:
