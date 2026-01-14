@@ -3,6 +3,8 @@ import os
 import vcfpy
 from typing import List, Tuple, Optional, Any, Iterable, Callable
 
+REF_SEQ_LEN_EXTRACT = 15
+
 RecordParser = Callable[
     [str, str, vcfpy.Record, List[Tuple[int, int, str, str]]],
     Optional[List[Any]]
@@ -96,11 +98,55 @@ def get_cds_info(
       return True, cds[2]
   return False, None
 
+def get_del_placement(pos: int, mut_seq: str, full_ref_seq: str) -> str:
+  """
+  Provides the string representation of an deletion placement in reference.
+  Deletion seq is marked by '*' and surrounded by 15 nt reference seq from both sides.
+
+  Parameters:
+      pos (int): Position of the mutation in the reference sequence.
+      mut_seq (str): Sequence of the mutation from vcf output (column 'REF' value).
+      full_ref_seq (str): The full reference nucleotide sequence.
+
+  Returns:
+      str: The reference sequence with the deletion marked by asterisks.
+  """
+  
+  result = []
+  idx = pos - 1
+  mut_len = len(mut_seq)
+  result.append(full_ref_seq[pos - REF_SEQ_LEN_EXTRACT:pos])
+  result.append(full_ref_seq[idx+1:idx + mut_len])
+  result.append(full_ref_seq[idx + mut_len:idx + mut_len + REF_SEQ_LEN_EXTRACT])
+  return '*'.join(result)
+
+def get_insert_placement(pos: int, mut_seq: str, full_ref_seq: str) -> str:
+  """
+  Provides the string representation of an insertion placement in reference.
+  Insertion seq is marked by '*' and surrounded by 15 nt reference seq from both sides.
+
+  Parameters:
+      pos (int): Position of the mutation in the reference sequence.
+      mut_seq (str): Sequence of the mutation (column 'ALT' value).
+      full_ref_seq (str): The full reference nucleotide sequence.
+
+  Returns:
+      str: The reference sequence with the insertion marked by asterisks.
+  """
+
+  result = []
+  result.append(full_ref_seq[pos - REF_SEQ_LEN_EXTRACT:pos])
+  result.append(mut_seq[1:])
+  result.append(full_ref_seq[pos:pos + REF_SEQ_LEN_EXTRACT])
+  return '*'.join(result)
+
+
 def parse_legacy_record(
   vcf_sample_id: str,
   sample_id: str, 
   record: vcfpy.Record, 
-  all_cds_regions: List[Tuple[int, int, str, str]]
+  all_cds_regions: List[Tuple[int, int, str, str]],
+  full_ref_seq: str
   ) -> Optional[List[Any]]:
   """
   Parses a VCF record and extracts relevant information.
@@ -110,6 +156,7 @@ def parse_legacy_record(
     sample_id (str): Sample ID from the file name.
     record (vcfpy.Record): VCF record.
     all_cds_regions (List[Tuple[int, int, str, str]]): List of gene locations.
+    full_ref_seq (str): full reference sequence string.
         
     Returns:
       Optional[List[Any]]: Valid record or None.
@@ -128,17 +175,22 @@ def parse_legacy_record(
       mut_type = 'deletion' if len(record.REF) > len(record.ALT[0].value) else 'insertion'
       valid_len = ((len(ref) - 1) % 3 == 0) if mut_type == 'deletion' else (len(alt) - 1) % 3 == 0
 
+      placement =(
+        get_del_placement(pos, ref, full_ref_seq) 
+        if mut_type == 'deletion' 
+        else get_insert_placement(pos, alt, full_ref_seq))
       
       _, product = get_cds_info(pos, all_cds_regions)
       return [sample_id, pos, ref, alt, dp, ad, freq, 
-              valid_len, mut_type, product]
+              valid_len, mut_type, product, placement]
   return None
 
 def parse_mutect2_record(
   vcf_sample_id: str,
   sample_id: str, 
   record: vcfpy.Record, 
-  all_cds_regions: List[Tuple[int, int, str, str]]
+  all_cds_regions: List[Tuple[int, int, str, str]],
+  full_ref_seq: str
   ) -> Optional[List[Any]]:
   """
   Parses a VCF record and extracts relevant information.
@@ -175,7 +227,7 @@ def parse_mutect2_record(
   ad = sample_call.data.get('AD')[1]
   pos = record.POS
   ref = record.REF
-  alt_formatted = alts[0].value
+  alt = alts[0].value
   mut_type = alts[0].type
   
   validity = 'NA'
@@ -184,11 +236,17 @@ def parse_mutect2_record(
   elif mut_type == 'INS':
     validity = (len(alts[0].value) - 1) % 3 == 0
 
+  placement = 'NA'
+  if mut_type == 'DEL':
+    placement = get_del_placement(pos, ref, full_ref_seq)
+  elif mut_type == 'INS':
+    placement =get_insert_placement(pos, alt, full_ref_seq)
+
   _, product = get_cds_info(pos, all_cds_regions)
 
-  return [sample_id, pos, ref, alt_formatted, dp, 
+  return [sample_id, pos, ref, alt, dp, 
                 ad, af,
-                validity, mut_type, product]
+                validity, mut_type, product, placement]
 
 
 def detect_record_type(vcf_header: vcfpy.Header) -> str:
@@ -222,6 +280,7 @@ def process_vcf_records(
     sample_id (str): Sample ID.
     vcf_file_path (str): Path to the VCF file.
     all_cds_regions (List[Tuple[int, int, str, str]]): List of CDS regions.
+    full_ref_seq (str): full reference sequence.
         
   Returns:
     List[List[Any]]: Extracted information from VCF records.
@@ -234,7 +293,7 @@ def process_vcf_records(
 
   data = []
   for record in vcf_reader:
-    indel_info = record_parser(vcf_sample_id, sample_id, record, all_cds_regions)
+    indel_info = record_parser(vcf_sample_id, sample_id, record, all_cds_regions, full_ref_seq)
     if indel_info is not None:
       data.append(indel_info)
 

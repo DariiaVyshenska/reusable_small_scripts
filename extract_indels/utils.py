@@ -24,6 +24,6 @@ def write_csv(sample_id: str, output_path: str, data: List) -> None:
                          'SEQ_DEPTH', 'ALT_SEQ_DEPTH', 'FREQUENCY', 
                         #  'ADF_RATIO', 'ADR_RATIO', 'STRND_BIAS_PASS', # no longer needed, keep for 'in case'
                          'VALID_CODON_LEN',  
-                         'CHANGE_TYPE', 'PRODUCT'])
+                         'CHANGE_TYPE', 'PRODUCT', 'PLACEMENT'])
     for row in data:
       csv_writer.writerow(row)
