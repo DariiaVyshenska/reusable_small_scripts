@@ -157,6 +157,12 @@ def parse_mutect2_record(
   if not any(alt.type in types_to_detect for alt in alts):
     return None
   
+  if len(alts) > 1:
+    raise ValueError(
+      f"{sample_id} ({vcf_sample_id}) has multi-allelic INDEL at "
+      f"{record.CHROM}:{record.POS} REF={record.REF} ALTs={[a.value for a in alts]}"
+    )
+  
   sample_call = record.call_for_sample[vcf_sample_id]
   dp = sample_call.data.get('DP')
   if dp is None or dp < 30:
